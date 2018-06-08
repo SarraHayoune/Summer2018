@@ -3,7 +3,7 @@ import matplotlib.pylab as plt
 
 #im loading the snapshot
 
-s = pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')   
+s = pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')   
 
 #save it by ctrl-x-s 'to save work'
 
@@ -43,7 +43,7 @@ axs[0].semilogy()
 axs[0].set_xlabel('R [kpc]')
 axs[0].set_ylabel(r'$\Sigma_{\star}$ [M$_{\odot}$ kpc$^{-2}$')
 #makes all the nice letters on the side of the axis
-
+plt.show()
 
 
 
