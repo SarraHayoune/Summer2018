@@ -13,6 +13,7 @@ import pandas as pd
 
 s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')   
 s.physical_units()
+pynbody.analysis.angmom.faceon(h[5])
 h = s.halos()
 h5= h[5]
 
