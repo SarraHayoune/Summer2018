@@ -18,7 +18,7 @@ h5= h[5]
 
 def findBH(h5):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
-    h5= snap.stars[BHfilter]
+    h5= s.stars[BHfilter]
     return h5
 
 
