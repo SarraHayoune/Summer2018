@@ -20,7 +20,7 @@ get_ipython().magic(u'matplotlib inline')
 # In[ ]:
 
 
-s = pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')   
+s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')   
 s.physical_units()
  pynbody.plot.image(h5.g, width=100, cmap='Blues');
 h = s.halos()
