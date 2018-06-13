@@ -24,4 +24,3 @@ def findBH(h5):
     return h[5]
 
 p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50)
-f, axs = plt.subplots(figsize=(14,6))# me changing it to make one plot
