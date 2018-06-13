@@ -16,11 +16,10 @@ h = s.halos()
 pynbody.analysis.angmom.faceon(h[5])
 s.physical_units()
 
+p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50)
 
 
 def findBH(h5):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     h[5]= s.stars[BHfilter]
     return h[5]
-
-p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50)
