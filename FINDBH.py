@@ -10,15 +10,28 @@
 import pynbody
 import numpy as np
 import pandas as pd
-import os
-pd.set_option('display.max_column', None)
-pd.set_option('display.max_rows', None)
 
 s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')   
 s.physical_units()
-pynbody.plot.image(h5.g, width=100, cmap='Blues')
 h = s.halos()
-h5= h[5]
-pynbody.analysis.halo.center(h5,mode='hyb')
-print(h[5]['pos'][0])
+def findBH(H[5]):
+    BHfilter = pynbody.filt.LowPass('tform',0.0)
+    BH = snap.stars[BHfilter]
+    return BH
 
+def findBHhalos(H[5]):
+    BH = findBH(snap)
+    BHhalos = BH['amiga.grp']
+    return BHhalos
+ for i in sortedhaloinds:
+        # which halo are we on?  need to center 
+        currenthalo = BHhalos[i]
+        print 'current halo: ',currenthalo
+        if currenthalo != halo:  # need to center on new halo
+            print "new halo calcs"
+            halo = currenthalo
+            pynbody.analysis.halo.center(h[currenthalo],mode='ssc')
+
+data = [BHhalos[i],BH['pos'][i].in_units('kpc'),getz(s),gettime(s),BH['r'][i]]
+            info = pd.DataFrame(data,columns=columns)
+            bhinfo = bhinfo.append(info)
