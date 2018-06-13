@@ -24,3 +24,5 @@ def findBH(h5):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     h[5]= s.stars[BHfilter]
     return h[5]
+with pynbody.analysis.halo.center(h[5], mode='hyb'): 
+print(h[5]['pos'][0])
