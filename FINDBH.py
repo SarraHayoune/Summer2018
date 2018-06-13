@@ -34,5 +34,5 @@ for i in sortedhaloinds:
             pynbody.analysis.halo.center(h[currenthalo],mode='ssc')
 
 data = [BHhalos[i],BH['pos'][i].in_units('kpc'),getz(s),gettime(s),BH['r'][i]]
-            info = pd.DataFrame(data,columns=columns)
-            bhinfo = bhinfo.append(info)
+info = pd.DataFrame(data,columns=columns)
+bhinfo = bhinfo.append(info)
