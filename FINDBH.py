@@ -28,6 +28,3 @@ def findBH(h5):
     return h5
 
 
-data = [h5['pos'].in_units('kpc'),h5['r']]
-info = pd.DataFrame(data,columns=columns)
-bhinfo = bhinfo.append(info)
