@@ -17,7 +17,7 @@ pynbody.analysis.angmom.faceon(h[5])
 s.physical_units()
 
 p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50)
- pynbody.analysis.halo.center(h[5],mode='hyb')
+pynbody.analysis.halo.center(h[5],mode='hyb')
 
 
 def findBH(h5):
