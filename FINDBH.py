@@ -17,10 +17,10 @@ h = s.halos()
 h5= h[5]
 def findBH(h5):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
-    BH = snap.stars[BHfilter]
-    return BH
+    h5= snap.stars[BHfilter]
+    return h5
 
 
-data = [BH['pos'][i].in_units('kpc'),getz(s),gettime(s),BH['r'][i]]
+data = [h5['pos'][i].in_units('kpc'),getz(s),gettime(s),h5['r'][i]]
 info = pd.DataFrame(data,columns=columns)
 bhinfo = bhinfo.append(info)
