@@ -13,7 +13,7 @@ p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50)
 pynbody.analysis.halo.center(h[5],mode='hyb') 
 s.physical_units() 
 
-def findBH(h[5]):
+def findBH('h[5]'):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     BH = s.stars[BHfilter]
     return BH
