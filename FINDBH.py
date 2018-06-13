@@ -21,6 +21,6 @@ def findBH(h5):
     return BH
 
 
-data = [BHhalos[i],BH['pos'][i].in_units('kpc'),getz(s),gettime(s),BH['r'][i]]
+data = [BH['pos'][i].in_units('kpc'),getz(s),gettime(s),BH['r'][i]]
 info = pd.DataFrame(data,columns=columns)
 bhinfo = bhinfo.append(info)
