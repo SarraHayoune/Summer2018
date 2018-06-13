@@ -8,7 +8,7 @@ pd.set_option('display.max_rows', None)
 
 s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096') 
 h = s.halos() 
-pynbody.analysis.angmom.faceon(h[5]) 
+pynbody.analysis.angmom.faceon(s) 
 p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50) 
 pynbody.analysis.halo.center(h[5],mode='hyb') 
 s.physical_units() 
