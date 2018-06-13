@@ -20,10 +20,6 @@ def findBH(h5):
     BH = snap.stars[BHfilter]
     return BH
 
-def findBHhalos(h5):
-    BH = findBH(h5)
-    BHhalos = BH['amiga.grp']
-    return BHhalos
 
 data = [BHhalos[i],BH['pos'][i].in_units('kpc'),getz(s),gettime(s),BH['r'][i]]
 info = pd.DataFrame(data,columns=columns)
