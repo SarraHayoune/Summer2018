@@ -24,7 +24,7 @@ def findBHhalos(h5):
     BH = findBH(h5)
     BHhalos = BH['amiga.grp']
     return BHhalos
- for i in sortedhaloinds:
+ for i in sortedhaloinds
         # which halo are we on?  need to center 
         currenthalo = BHhalos[i]
         print 'current halo: ',currenthalo
