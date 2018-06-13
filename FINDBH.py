@@ -14,9 +14,10 @@ pynbody.analysis.halo.center(h[5],mode='hyb')
 s.physical_units() 
 
 def findBH(h5): 
-BHfilter = pynbody.filt.LowPass('tform',0.0) 
-h[5]= s.stars[BHfilter] 
-return h[5] 
+     BHfilter = pynbody.filt.LowPass('tform',0.0) 
+     BH = s.stars[BHfilter] 
+     return h[5] 
+    
 columns = ['BHpos','BHvel','halodist']
 bhinfo = pd.DataFrame(columns=columns)
 
