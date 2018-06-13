@@ -1,28 +1,36 @@
+# assignement: Find Black Hole
 
-# coding: utf-8
-
-# assignement: Find Black Hole 
-# 
+#
 
 # In[20]:
 
+import pynbody 
 
-import pynbody
-import numpy as np
-import pandas as pd
+import numpy as np 
 
-s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')   
-h = s.halos()
-pynbody.analysis.angmom.faceon(h[5])
-s.physical_units()
+import pandas as pd 
 
-p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50)
-pynbody.analysis.halo.center(h[5],mode='hyb')
+s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096') 
+
+h = s.halos() 
+
+pynbody.analysis.angmom.faceon(h[5]) 
+
+s.physical_units() 
+
+p = pynbody.analysis.profile.Profile(h[5].s,min=.01,max=50) 
+
+pynbody.analysis.halo.center(h[5],mode='hyb') 
 
 
-def findBH(h5):
-    BHfilter = pynbody.filt.LowPass('tform',0.0)
-    h[5]= s.stars[BHfilter]
-    return h[5]
+def findBH(h5): 
+
+BHfilter = pynbody.filt.LowPass('tform',0.0) 
+
+h[5]= s.stars[BHfilter] 
+
+return h[5] 
+
 with pynbody.analysis.halo.center(h[5], mode='hyb'): 
-             print(h[5]['pos'][0])
+
+print(h[5]['pos'][0]) 
