@@ -1,5 +1,6 @@
 # assignement: Find Black Hole
 
+
 import pynbody 
 import numpy as np 
 import pandas as pd 
@@ -17,6 +18,7 @@ def findBH( h[5]):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     BH = s.stars[BHfilter]
     return B
+
 f, axs = plt.subplots(figsize=(14,6))
 axs.plot(p['rbins'],p['density'], 'k')
 axs.semilogy()
