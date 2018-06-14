@@ -19,10 +19,19 @@ def findBH(s):
     BH = s.stars[BHfilter]
     return B
 
-f, axs = plt.subplots(figsize=(14,6))
-axs.plot(p['rbins'],p['density'], 'k')
-axs.semilogy()
-axs.set_xlabel('R [kpc]''Density PLOT OF H05')
-axs.set_ylabel(r'$\rho_{DM}$ [M$_{\odot}$ kpc$^{-3}$]')
-#^^^ lines are writing the graph up
-plt.savefig("ThePlotFor11.png")
+grpid=1
+w=80;
+
+pynbody.analysis.halo.center(h[grpid],mode='hyb');
+pynbody.analysis.angmom.faceon(h[grpid], cen=(0,0,0))
+
+BH=s.star[pynbody.filt.BandPass('tform','-15 Gyr','0 Gyr')]
+BH_pos=BH['pos']
+nBH=len(BH['iord']);
+
+h[grpid].s['tform'].convert_units('Gyr');
+
+pynbody.plot.image(h[grpid].s,qty="tform",cmap="Greys", width=w, log=False);
+plt.plot(np.array((BH[np.where(BH['amiga.grp']==grpid)]['pos'])).T[0],np.array((BH[np.where(BH['amiga.grp']==grpid)]['pos'])).T[1],'r+')
+plt.xlim(-w/2,w/2)
+plt.ylim(-w/2,w/2);
