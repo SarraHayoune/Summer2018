@@ -22,7 +22,7 @@ def findBH( h[5]):
 grpid=1
 w=80;
 
-pynbody.analysis.halo.center(h[grpid],mode='hyb');
+pynbody.analysis.halo.center(h[grpid],mode='ssc');
 pynbody.analysis.angmom.faceon(h[grpid], cen=(0,0,0))
 
 BH=s.star[pynbody.filt.BandPass('tform','-15 Gyr','0 Gyr')]
