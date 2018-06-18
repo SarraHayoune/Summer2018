@@ -27,5 +27,28 @@ def findBH(s):
 BH = findBH(s)
 
 BH=BH['pos']
+print BH
 
- 
+#this is the position of black hole
+BHposition=BH['pos']
+
+ print BHposition
+
+#putting the x-values into a column
+BHx= BHposition[:,0]
+print BHx
+
+#putting the y-values into a column
+BHy= BHposition[:,1]
+print BHy
+
+#putting the z-values into a column
+BHz= BHposition[:,2]
+print BHz
+
+#distance function
+#def distance
+
+#the .5 is the square root , this is the distance formula
+distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+print distance
