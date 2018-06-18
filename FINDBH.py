@@ -46,9 +46,6 @@ print BHy
 BHz= BHposition[:,2]
 print BHz
 
-#distance function
-#def distance
-
 #the .5 is the square root , this is the distance formula
 distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
 print distance
