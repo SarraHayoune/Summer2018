@@ -15,6 +15,7 @@ pynbody.analysis.angmom.faceon(h5)
 
   # convert the units 
 s.physical_units()
+pynbody.analysis.halo.center(h5, mode='hyb')
 print (h[5]['pos'][0])
 print (h[5]['pos'][1])
 print (h[5]['pos'][2])
