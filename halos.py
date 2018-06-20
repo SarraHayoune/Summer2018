@@ -22,13 +22,13 @@ h = s.halos()
 def findBH(s):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     BH = s.stars[BHfilter]
-    return BH[0,1,2]
+    return BH
 BH = findBH(s)
 print BH
 def findBHhalos(s):
     BH = findBH(s)
     BHhalos = BH['amiga.grp']
     return BHhalos
-BH = BHhalos
-print BHhalos
+BH = findBHhalos(s)
+print findBHhalos
 
