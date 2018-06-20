@@ -24,4 +24,4 @@ def findBH(s):
     BH = s.stars[BHfilter]
     return BH[0,1,2]
 BH = findBH(s)
-
+print BH
