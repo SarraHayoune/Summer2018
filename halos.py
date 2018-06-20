@@ -25,3 +25,8 @@ def findBH(s):
     return BH[0,1,2]
 BH = findBH(s)
 print BH
+def findBHhalos(s):
+    BH = findBH(s)
+    BHhalos = BH['amiga.grp']
+    return BHhalos
+
