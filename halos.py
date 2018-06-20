@@ -33,7 +33,7 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos
 
-for halo in halos
+for halo in halos:
     
     #the position of black hole
    BHposition=BH['pos']
