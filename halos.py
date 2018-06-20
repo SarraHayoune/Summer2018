@@ -29,4 +29,6 @@ def findBHhalos(s):
     BH = findBH(s)
     BHhalos = BH['amiga.grp']
     return BHhalos
+  BH = BHhalos
+print BHhalos
 
