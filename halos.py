@@ -1,10 +1,4 @@
-
-# coding: utf-8
-
 # Assignement2" FIND ALL THE BLACK HOLES "
-
-# In[ ]:
-
 
 import pynbody 
 import matplotlib.pylab as plt
@@ -33,12 +27,13 @@ for halo in halos:
         BHfilter = pynbody.filt.LowPass('tform',0.0)
         BH = s.stars[BHfilter]
         return BH
-   BH = findBH(s)
-   print BH
-   def findBHhalos(s):
     BH = findBH(s)
-    BHhalos = BH['amiga.grp']
-    return BHhalos
+    print BH
+   
+    def findBHhalos(s):
+        BH = findBH(s)
+        BHhalos = BH['amiga.grp']
+        return BHhalos
     halos = findBHhalos(s)
     print halos
     
