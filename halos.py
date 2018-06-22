@@ -30,12 +30,12 @@ for halo in halos:
     # put your galaxy that you care about in the center of the simulation
    pynbody.analysis.angmom.faceon(h[halo])
    # function to find black hole
-    def findBH(s):
+   def findBH(s):
         BHfilter = pynbody.filt.LowPass('tform',0.0)
         BH = s.stars[BHfilter]
         return BH
-    BH = findBH(s)
-    print BH
+   BH = findBH(s)
+   print BH
     
     #the position of black hole
    BHposition=BH['pos']
