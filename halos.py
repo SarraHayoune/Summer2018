@@ -15,7 +15,7 @@ h = s.halos()
 pynbody.analysis.angmom.faceon(h[halo])
 s.physical_units()
    
-with pynbody.analysis.halo.center(h[5], mode='hyb'):
+with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      print (h[halo]['pos'][0])
      print (h[halo]['pos'][1])
      print (h[halo]['pos'][2])
