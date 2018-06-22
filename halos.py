@@ -34,6 +34,8 @@ halos = findBHhalos(s)
 print halos
 
 for halo in halos:
+    # put your galaxy that you care about in the center of the simulation
+    pynbody.analysis.angmom.faceon(BH)
     
     #the position of black hole
    BHposition=BH['pos']
