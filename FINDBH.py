@@ -1,14 +1,4 @@
-
-# coding: utf-8
-
-# assignement: Find Black Hole h[5]
-# 
-
-# In[3]:
-
-
-
-                   # assignement: Find Black Hole
+# assignement: Find Black Hole
     
 import pynbody 
 import matplotlib.pylab as plt
