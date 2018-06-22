@@ -19,13 +19,6 @@ s.physical_units()
   # the halo that I need is h[5]
 h = s.halos()
 
-def findBH(s):
-    BHfilter = pynbody.filt.LowPass('tform',0.0)
-    BH = s.stars[BHfilter]
-    return BH
-BH = findBH(s)
-print BH
-
 def findBHhalos(s):
     BH = findBH(s)
     BHhalos = BH['amiga.grp']
@@ -36,8 +29,13 @@ print halos
 for halo in halos:
     # put your galaxy that you care about in the center of the simulation
    pynbody.analysis.angmom.faceon(h[halo])
-   BH = findBH(s)
-   print BH
+   # function to find black hole
+    def findBH(s):
+        BHfilter = pynbody.filt.LowPass('tform',0.0)
+        BH = s.stars[BHfilter]
+        return BH
+    BH = findBH(s)
+    print BH
     
     #the position of black hole
    BHposition=BH['pos']
