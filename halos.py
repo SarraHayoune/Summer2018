@@ -24,9 +24,9 @@ for halo in halos:
     s.physical_units()
    
     with pynbody.analysis.halo.center(h[5], mode='hyb'):
-    print (h[halo]['pos'][0])
-    print (h[halo]['pos'][1])
-    print (h[halo]['pos'][2])
+         print (h[halo]['pos'][0])
+         print (h[halo]['pos'][1])
+         print (h[halo]['pos'][2])
    
    # function to find black hole
     def findBH(s):
