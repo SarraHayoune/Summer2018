@@ -35,12 +35,8 @@ for halo in halos:
    # the halo that I need is h[5]
     BH = findBH(s)
     halos = findBHhalos(s)
-    sortedhaloinds = np.argsort(halos)
-    print halos[sortedhaloinds]
-    print sortedhaloinds
     halo = 0  # initialize what halo we are on
-    currenthalo = halos[i]
-    print 'current halo: ',currenthalo
+    print 'current halo: ',halo
    
     with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
