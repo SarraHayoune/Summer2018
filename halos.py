@@ -16,12 +16,12 @@ def findBH(s):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     BH = s.stars[BHfilter]
     return BH
- BH = findBH(s)
- print BH
- def findBHhalos(s):
-     BH = findBH(s)
-     BHhalos = BH['amiga.grp']
-     return BHhalos
+BH = findBH(s)
+print BH
+def findBHhalos(s):
+    BH = findBH(s)
+    BHhalos = BH['amiga.grp']
+    return BHhalos
     
 for halo in halos:
     halos = findBHhalos(s)
