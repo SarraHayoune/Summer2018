@@ -28,19 +28,20 @@ print halos
 for halo in halos:  
 
     # put your galaxy that you care about in the center of the simulation
-
-    pynbody.analysis.angmom.faceon(h[halo])
-   # the halo that I need is h[5]
-    s.physical_units()
-   # the halo that I need is h[5]
-    BH = findBH(s)
-    halos = findBHhalos(s)
     sortedhaloinds = np.argsort(halos)
     print halos[sortedhaloinds]
     print sortedhaloinds
-    halo = 0  # initialize what halo we are on
+    pynbody.analysis.angmom.faceon(h[halo])
+   # the halo that I need is h[5]
    
     for i in sortedhaloinds:
+        h = s.halos()
+        s.physical_units()
+   # the halo that I need is h[5]
+        BH = findBH(s)
+        halos = findBHhalos(s)
+    
+   
         # which halo are we on?  need to center 
         currenthalo = halos[i]
         print 'current halo: ',currenthalo
