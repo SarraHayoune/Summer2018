@@ -20,7 +20,7 @@ print BH
 def findBHhalos(s):
     BH = findBH(s)
     BHhalos = BH['amiga.grp']
-    return BHhalo
+    return BHhalos
 halos = findBHhalos(s)
 print halos 
    
