@@ -20,14 +20,14 @@ def findBH(s):
 BH = findBH(s)
 print BH
    
-def findBHhalos(s):
+    
+for halo in halos:
+    def findBHhalos(s):
     BH = findBH(s)
     BHhalos = BH['amiga.grp']
     return BHhalos
-halos = findBHhalos(s)
-print halos
-    
-for halo in halos:
+    halos = findBHhalos(s)
+    print halos
     # put your galaxy that you care about in the center of the simulation
     pynbody.analysis.angmom.faceon(h[halo])
     s.physical_units()
