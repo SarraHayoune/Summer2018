@@ -35,9 +35,18 @@ for halo in halos:
    # the halo that I need is h[5]
     BH = findBH(s)
     halos = findBHhalos(s)
-    #halo = 0  # initialize what halo we are on
-    print 'current halo: ',halos
+    sortedhaloinds = np.argsort(halos)
+    print halos[sortedhaloinds]
+    print sortedhaloinds
+    halo = 0  # initialize what halo we are on
    
+    for i in sortedhaloinds:
+        # which halo are we on?  need to center 
+        currenthalo = halos[i]
+        print 'current halo: ',currenthalo
+        if currenthalo != halo:  # need to center on new halo
+            print "new halo calcs"
+            halo = currenthalo
     with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
     #the position of black hole
