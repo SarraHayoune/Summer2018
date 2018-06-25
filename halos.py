@@ -44,10 +44,7 @@ for halo in halos:
         # which halo are we on?  need to center 
         currenthalo = halos[i]
         print 'current halo: ',currenthalo
-        if currenthalo != halo:  # need to center on new halo
-            print "new halo calcs"
-            halo = currenthalo
-    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+         with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
     #the position of black hole
          BHposition=BH['pos']
@@ -67,5 +64,9 @@ for halo in halos:
          print distance
    
       
+        if currenthalo != halo:  # need to center on new halo
+            print "new halo calcs"
+            halo = currenthalo
+   
    
   
