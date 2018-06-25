@@ -6,13 +6,12 @@ import matplotlib.pylab as plt
 
  # loading the snapshot
 s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
-
-for halo in s:
-    s.physical_units()
+s.physical_units()
 # the halo that I need is h[5]
-    h = s.halos()
-    print 'current halo:', halo
-   
+h = s.halos()
+print 'current halo:', halo
+
+for halo in s:  
  # function to find black hole
     def findBH(s):
         BHfilter = pynbody.filt.LowPass('tform',0.0)
