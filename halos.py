@@ -30,20 +30,20 @@ for halo in h:
     print 'current halo:', halo
   
     # put your galaxy that you care about in the center of the simulation
-    for i in halo
-        pynbody.analysis.angmom.faceon(h[halo])
+
+     pynbody.analysis.angmom.faceon(h[halo])
    # convert the units 
        s.physical_units()
    # the halo that I need is h[5]
-       halo = 0  # initialize what halo we are on
+     halo = 0  # initialize what halo we are on
    
-        with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+     with pynbody.analysis.halo.center(h[halo], mode='hyb'):
              print (h[halo]['pos'][0])
              print (h[halo]['pos'][1])
              print (h[halo]['pos'][2])
     #this is the distance formula
-       distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
-       print distance
+     distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+     print distance
    
       
    
