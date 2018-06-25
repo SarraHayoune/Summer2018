@@ -26,13 +26,19 @@ print halos
    
     
 for halo in halos:  
-
-    # put your galaxy that you care about in the center of the simulation
     sortedhaloinds = np.argsort(halos)
-    pynbody.analysis.angmom.faceon(h[halo])
-   # the halo that I need is h[5]
-    print 'current halo: ',halos
-    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+    print sortedhaloinds
+    print halos[sortedhaloinds]
+    halo = 0  # initialize what halo we are on
+   
+    for i in sortedhaloinds:
+        # which halo are we on?  need to center 
+        currenthalo = halos[i]
+        print 'current halo: ',currenthalo
+        
+    # put your galaxy that you care about in the center of the simulatio
+        pynbody.analysis.angmom.faceon(h[i])
+        with pynbody.analysis.halo.center(h[i], mode='hyb'):
      
     #the position of black hole
              BHposition=BH['pos']
