@@ -22,10 +22,10 @@ def findBHhalos(s):
     BH = findBH(s)
     BHhalos = BH['amiga.grp']
     return BHhalos
-    
-for halo in halos:
     halos = findBHhalos(s)
-    print halos  
+    print halos 
+    
+for halo in halos: 
     
     currenthalo = BHhalos[halo]
     print 'current halo: ',currenthalo
