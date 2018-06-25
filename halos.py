@@ -33,12 +33,11 @@ for halo in halos:
    # the halo that I need is h[5]
     s.physical_units()
    # the halo that I need is h[5]
-    h = s.halos()
     BH = findBH(s)
     halos = findBHhalos(s)
     sortedhaloinds = np.argsort(halos)
-    print sortedhaloinds
     print halos[sortedhaloinds]
+    print sortedhaloinds
     halo = 0  # initialize what halo we are on
    
     for i in sortedhaloinds:
@@ -46,24 +45,24 @@ for halo in halos:
         currenthalo = halos[i]
         print 'current halo: ',currenthalo
    
-    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+        with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
     #the position of black hole
-         BHposition=BH['pos']
-         print BHposition
+             BHposition=BH['pos']
+             print BHposition
    #putting the x-values into a column
-         BHx= BHposition[:,0]
+             BHx= BHposition[:,0]
        
 
    #putting the y-values into a column
-         BHy= BHposition[:,1]
-       
+            BHy= BHposition[:,1]
+        
    #putting the z-values into a column
-         BHz= BHposition[:,2]
+            BHz= BHposition[:,2]
       
     #this is the distance formula
-    distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
-    print distance
+            distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+            print distance
    
       
    
