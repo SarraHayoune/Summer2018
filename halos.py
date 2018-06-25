@@ -26,29 +26,25 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos 
     
-for halo in halos:
+for halo in h:
     print 'current halo:', halo
+  
     # put your galaxy that you care about in the center of the simulation
-    pynbody.analysis.angmom.faceon(h[halo])
+    for i in halo
+        pynbody.analysis.angmom.faceon(h[halo])
    # convert the units 
-    s.physical_units()
+       s.physical_units()
    # the halo that I need is h[5]
-    h = s.halos()
-    BH = findBH(s)
-    halos = findBHhalos(s)
-    sortedhaloinds = np.argsort(halos)
-    print sortedhaloinds
-    print halos[sortedhaloinds]
-    halo = 0  # initialize what halo we are on
+       halo = 0  # initialize what halo we are on
    
-       
-    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
-          print (h[halo]['pos'][0])
-          print (h[halo]['pos'][1])
-          print (h[halo]['pos'][2])
+        with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+             print (h[halo]['pos'][0])
+             print (h[halo]['pos'][1])
+             print (h[halo]['pos'][2])
     #this is the distance formula
-    distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
-    print distance
+       distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+       print distance
+   
       
    
   
