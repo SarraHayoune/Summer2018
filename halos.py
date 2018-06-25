@@ -35,8 +35,8 @@ for halo in halos:
    # the halo that I need is h[5]
     BH = findBH(s)
     halos = findBHhalos(s)
-    halo = 0  # initialize what halo we are on
-    print 'current halo: ',halo
+    #halo = 0  # initialize what halo we are on
+    print 'current halo: ',halos
    
     with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
