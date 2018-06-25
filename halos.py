@@ -11,23 +11,22 @@ s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmar
 s.physical_units()
 # the halo that I need is h[5]
 h = s.halos()
-    
 for halo in halos:
     
    
- # function to find black hole
-def findBH(s):
-    BHfilter = pynbody.filt.LowPass('tform',0.0)
-    BH = s.stars[BHfilter]
-    return BH
-BH = findBH(s)
-print BH
-def findBHhalos(s):
+    # function to find black hole
+    def findBH(s):
+        BHfilter = pynbody.filt.LowPass('tform',0.0)
+        BH = s.stars[BHfilter]
+        return BH
+    BH = findBH(s)
+    print BH
+    def findBHhalos(s):
         BH = findBH(s)
         BHhalos = BH['amiga.grp']
         return BHhalos
-halos = findBHhalos(s)
-print halos   
+    halos = findBHhalos(s)
+    print halos   
     currenthalo = BHhalos[halo]
     print 'current halo: ',currenthalo
     # put your galaxy that you care about in the center of the simulation
