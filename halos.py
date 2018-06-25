@@ -2,7 +2,6 @@
 
 import pynbody 
 import matplotlib.pylab as plt
-plt.switch_backend("agg") 
 
  # loading the snapshot
 s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
@@ -26,14 +25,28 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos 
     
-for halo in halos: 
-    
-    currenthalo = halos[halo]
-    print 'current halo: ',currenthalo
+for halo in halos:
     # put your galaxy that you care about in the center of the simulation
     pynbody.analysis.angmom.faceon(h[halo])
+   # convert the units 
     s.physical_units()
+   # the halo that I need is h[5]
+    h = s.halos()
+    BH = findBH(s)
+    halos = findBHhalos(s)
+    sortedhaloinds = np.argsort(halos)
+    print sortedhaloinds
+    print halos[sortedhaloinds]
+    halo = 0  # initialize what halo we are on
    
+    for i in sortedhaloinds:
+        # which halo are we on?  need to center 
+        currenthalo = halos[i]
+        print 'current halo: ',currenthalo
+        if currenthalo != halo:  # need to center on new halo
+            print "new halo calcs"
+            halo = currenthalo
+           
     with pynbody.analysis.halo.center(h[halo], mode='hyb'):
          print (h[halo]['pos'][0])
          print (h[halo]['pos'][1])
