@@ -31,10 +31,7 @@ for halo in halos:
     sortedhaloinds = np.argsort(halos)
     pynbody.analysis.angmom.faceon(h[halo])
    # the halo that I need is h[5]
-   
-        # which halo are we on?  need to center 
-    currenthalo = halos[i]
-    print 'current halo: ',currenthalo
+    print 'current halo: ',halos
     with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
     #the position of black hole
