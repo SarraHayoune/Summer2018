@@ -36,6 +36,7 @@ for halo in halos:
         print 'current halo: ',currenthalo
         
     # put your galaxy that you care about in the center of the simulatio
+        halo= currenthalo
         pynbody.analysis.angmom.faceon(h[halo])
         with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
