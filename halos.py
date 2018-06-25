@@ -1,6 +1,7 @@
 # Assignement2" FIND ALL THE BLACK HOLES "
 
 import pynbody 
+import numpy as np
 import matplotlib.pylab as plt
 
  # loading the snapshot
