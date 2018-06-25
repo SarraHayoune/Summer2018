@@ -28,7 +28,7 @@ print halos
     
 for halo in halos: 
     
-    currenthalo = BHhalos[halo]
+    currenthalo = halos[halo]
     print 'current halo: ',currenthalo
     # put your galaxy that you care about in the center of the simulation
     pynbody.analysis.angmom.faceon(h[halo])
