@@ -9,9 +9,9 @@ s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmar
 s.physical_units()
 # the halo that I need is h[5]
 h = s.halos()
-print 'current halo:', halo
+print 'current halo:', h
 
-for halo in s:  
+for halo in h:  
  # function to find black hole
     def findBH(s):
         BHfilter = pynbody.filt.LowPass('tform',0.0)
