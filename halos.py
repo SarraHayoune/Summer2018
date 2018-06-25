@@ -23,9 +23,9 @@ print BH
     
 for halo in halos:
     def findBHhalos(s):
-    BH = findBH(s)
-    BHhalos = BH['amiga.grp']
-    return BHhalos
+        BH = findBH(s)
+        BHhalos = BH['amiga.grp']
+        return BHhalos
     halos = findBHhalos(s)
     print halos
     # put your galaxy that you care about in the center of the simulation
