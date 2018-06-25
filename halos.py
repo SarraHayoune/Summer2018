@@ -48,29 +48,26 @@ for halo in halos:
             print "new halo calcs"
             halo = currenthalo
            
-    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
-         print (h[halo]['pos'][0])
-         print (h[halo]['pos'][1])
-         print (h[halo]['pos'][2])
+        with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+             print (h[halo]['pos'][0])
+             print (h[halo]['pos'][1])
+             print (h[halo]['pos'][2])
       
     
     #the position of black hole
-    BHposition=BH['pos']
-    print BHposition
+        BHposition=BH['pos']
+        print BHposition
 
    #putting the x-values into a column
-    BHx= BHposition[:,0]
-    print BHx
+       BHx= BHposition[:,0]
+       print BHx
 
    #putting the y-values into a column
-    BHy= BHposition[:,1]
-    print BHy
+      BHy= BHposition[:,1]
+      print BHy
 
    #putting the z-values into a column
-    BHz= BHposition[:,2]
-    print BHz
+      BHz= BHposition[:,2]
+      print BHz
 
-   #this is the distance formula
-    distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
-    print distance
-
+  
