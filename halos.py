@@ -55,14 +55,14 @@ for halo in halos:
        
 
    #putting the y-values into a column
-            BHy= BHposition[:,1]
+             BHy= BHposition[:,1]
         
    #putting the z-values into a column
-            BHz= BHposition[:,2]
+             BHz= BHposition[:,2]
       
     #this is the distance formula
-            distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
-            print distance
+             distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+             print distance
    
       
    
