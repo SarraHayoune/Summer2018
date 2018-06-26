@@ -28,38 +28,36 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos
 
+currenthalo = np.argsort(halos)
+print halos[currenthalo] 
+
+for i in currenthalo:
     
-for i in halos:
-    currenthalo = np.argsort(halos)
-    print halos[currenthalo]
     # which halo are we on?  
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
-    halo=0
-    if currenthalo != halo:  # need to center on new halo
-       halo= currenthalo
-     
+    currenthalo= halo
        # put your galaxy that you care about in the center of the simulation
       
-       pynbody.analysis.angmom.faceon(h[halo])
-       with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+    pynbody.analysis.angmom.faceon(h[halo])
+    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
     # the position of black hole
-            BHposition=BH['pos']
-            print BHposition
+         BHposition=BH['pos']
+         print BHposition
       
    # x-values 
-            BHx= BHposition[:,0]
+         BHx= BHposition[:,0]
     
    # y-values 
-            BHy= BHposition[:,1]  
+         BHy= BHposition[:,1]  
     
-   # z-values 
-            BHz= BHposition[:,2]
+   # z-values
+         BHz= BHposition[:,2]
       
     #this is the distance formula
-            distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
-            print 'distance:', distance
+         distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+         print 'distance:', distance
    
       
        
