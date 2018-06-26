@@ -26,7 +26,7 @@ def findBHhalos(s):
     BHhalos = BH['amiga.grp']
     return BHhalos
 halos = findBHhalos(s)
-print halos 
+print halos
 
 
 for i in halos:
@@ -35,12 +35,12 @@ for i in halos:
     print 'current halo: ',currentBH
         
     # put your galaxy that you care about in the center of the simulation
-    i = currentBH
-    pynbody.analysis.angmom.faceon(h[i])
-    with pynbody.analysis.halo.center(h[i], mode='hyb'):
+    bh = currentBH
+    pynbody.analysis.angmom.faceon(h[bh])
+    with pynbody.analysis.halo.center(h[bh], mode='hyb'):
      
     # the position of black hole
-         #BHposition=BH['pos']
+         BHposition=BH['pos']
          #print BHposition
       
    # x-values 
