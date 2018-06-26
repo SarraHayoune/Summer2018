@@ -36,10 +36,14 @@ for i in BHhalo:
     # which halo are we on?  
     currenthalo = halos[i]
     print 'current halo: ',currenthalo
+    i=0
    
     if currenthalo != i:  # need to center on new halo
-       i = currenthalo  
-       print "new halo calcs"
+       print " first black hole:", i
+    else
+        currenthalo = i
+        print " second black hole:", i
+       
     
     # put your galaxy that you care about in the center of the simulation
     bh = currenthalo
