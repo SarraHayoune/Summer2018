@@ -28,10 +28,10 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos
 
-bh-halo = np.argsort(halos)
-print halos[bh-halo]
+BHhalo = np.argsort(halos)
+print halos[BHhalo]
 
-for i in bh-halo:
+for i in BHhalo:
     
     # which halo are we on?  
     currenthalo = halos[i]
