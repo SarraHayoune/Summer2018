@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pylab as plt
 
 # loading the snapshot
-s = pynbody.load('/mnt/storm/storm.cosmo25cmb.4096g5HbwK1BH.004096/storm.cosmo25cmb.4096g5HbwK1BH.004096')   
+s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')  
 
 # convert the units 
 s.physical_units()
@@ -47,13 +47,13 @@ for i in currenthalo:
          print BHposition
       
    # x-values 
-         BHx= BHposition[:,0]
+         BHx= BHposition[i,0]
     
    # y-values 
-         BHy= BHposition[:,1]  
+         BHy= BHposition[i,1]  
     
    # z-values 
-         BHz= BHposition[:,2]
+         BHz= BHposition[i,2]
       
     #this is the distance formula
          distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
