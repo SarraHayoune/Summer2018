@@ -30,7 +30,7 @@ print halos
 
 BHhalo = np.argsort(halos)
 print halos[BHhalo]
- halo=0
+halo=0
     
 for i in BHhalo:
     # which halo are we on?  
