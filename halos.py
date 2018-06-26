@@ -30,15 +30,15 @@ print halos
 
 
 for i in halos:
-    currenthalo = np.argsort(halos)
-    print halos[currenthalo]
+    bh-halo = np.argsort(halos)
+    print halos[bh-halo]
     
     # which halo are we on?  
     currenthalo = halos[i]
     print 'current halo: ',currenthalo
         
     # put your galaxy that you care about in the center of the simulation
-    bh = currenthoalo
+    bh = currenthalo
     pynbody.analysis.angmom.faceon(h[bh])
     with pynbody.analysis.halo.center(h[bh], mode='hyb'):
      
