@@ -28,7 +28,7 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos
 
-sorthalo = np.argsort(halos)
+sorthalo = np.argsort(BHhalos)
 print BHhalos[sorthalo]
 halo=0
     
