@@ -36,10 +36,11 @@ for i in BHhalo:
     # which halo are we on?  
     currenthalo = halos[i]
     print 'current halo: ',currenthalo
-    halo=0
-    if currenthalo != halo:  # need to center on new halo
+   
+    if currenthalo != i:  # need to center on new halo
+       i = currenthalo  
        print "new halo calcs"
-       halo = currenthalo    
+    
     # put your galaxy that you care about in the center of the simulation
     bh = currenthalo
     pynbody.analysis.angmom.faceon(h[bh])
@@ -47,7 +48,7 @@ for i in BHhalo:
      
     # the position of black hole
          BHposition=BH['pos']
-         #print BHposition
+         print BHposition
       
    # x-values 
          BHx= BHposition[i,0]
