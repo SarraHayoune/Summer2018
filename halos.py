@@ -36,33 +36,32 @@ for i in BHhalo:
     # which halo are we on?  
     currenthalo = halos[i]
     print 'current halo: ',currenthalo
-    i=0
+    halos=0
    
-    if currenthalo != i:  # need to center on new halo
-       print " this black hole:", currenthalo
-       
-    
-    # put your galaxy that you care about in the center of the simulation
-    bh = currenthalo
-    pynbody.analysis.angmom.faceon(h[bh])
-    with pynbody.analysis.halo.center(h[bh], mode='hyb'):
+    if currenthalo != halos:  # need to center on new halo
+       hlaos= currenthalo
+     
+       # put your galaxy that you care about in the center of the simulation
+       bh = currenthalo
+       pynbody.analysis.angmom.faceon(h[bh])
+       with pynbody.analysis.halo.center(h[bh], mode='hyb'):
      
     # the position of black hole
-         BHposition=BH['pos']
-         print BHposition
+            BHposition=BH['pos']
+            print BHposition
       
    # x-values 
-         BHx= BHposition[i,0]
+            BHx= BHposition[i,0]
     
    # y-values 
-         BHy= BHposition[i,1]  
+            BHy= BHposition[i,1]  
     
    # z-values 
-         BHz= BHposition[i,2]
+            BHz= BHposition[i,2]
       
     #this is the distance formula
-         distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
-         print distance
+            distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+            print distance
     
       
        
