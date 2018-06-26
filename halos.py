@@ -33,7 +33,7 @@ for i in halos:
     currenthalo = np.argsort(halos)
     print halos[currenthalo]
     # which halo are we on?  
-    current= halos[i]
+    currenthalo= halos[i]
     print 'current halo: ', currenthalo
     halo=0
     if currenthalo != halo:  # need to center on new halo
