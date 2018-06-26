@@ -28,11 +28,13 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos
 
+currenthalo = np.argsort(halos)
+    print halos[currenthalo]
 
 for i in halos:
     # which halo are we on?  
-    currentBH = halos[i]
-    print 'current halo: ',currentBH
+    currenthalo = halos[i]
+    print 'current halo: ',currenthalo
         
     # put your galaxy that you care about in the center of the simulation
     bh = currentBH
