@@ -40,9 +40,8 @@ for i in BHhalo:
    
     if currenthalo != i:  # need to center on new halo
        print " first black hole:", i
-    else
-        currenthalo = i
-        print " second black hole:", i
+       currenthalo = i
+       print " second black hole:", i
        
     
     # put your galaxy that you care about in the center of the simulation
