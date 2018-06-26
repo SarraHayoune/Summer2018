@@ -28,14 +28,13 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos
 
-currenthalo = np.argsort(halos)
-print halos[currenthalo]
-
     
 for i in halos:
+    currenthalo = np.argsort(halos)
+    print halos[currenthalo]
     # which halo are we on?  
-    currenthalo = halos[i]
-    print 'current halo: ',currenthalo
+    current= halos[i]
+    print 'current halo: ', currenthalo
     halo=0
     if currenthalo != halo:  # need to center on new halo
        halo= currenthalo
