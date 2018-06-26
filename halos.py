@@ -21,17 +21,7 @@ def findBH(s):
 BH = findBH(s)
 print BH
 
-def findBHhalos(s):
-    BH = findBH(s)
-    BHhalos = BH['amiga.grp']
-    return BHhalos
-halos = findBHhalos(s)
-print halos 
 
-#go through each halo one by one  
-currenthalo = np.argsort(halos)
-print halos[currenthalo]
-   
 for i in currenthalo:
     # which halo are we on?  
     currentBH = halos[i]
@@ -43,8 +33,8 @@ for i in currenthalo:
     with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
     # the position of black hole
-         BHposition=BH['pos']
-         print BHposition
+         #BHposition=BH['pos']
+         #print BHposition
       
    # x-values 
          BHx= BHposition[i,0]
