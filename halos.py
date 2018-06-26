@@ -36,6 +36,7 @@ for i in BHhalo:
     # which halo are we on?  
     currenthalo = halos[i]
     print 'current halo: ',currenthalo
+    halo=0
     if currenthalo != halo:  # need to center on new halo
        print "new halo calcs"
        halo = currenthalo    
