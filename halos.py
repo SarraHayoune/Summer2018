@@ -22,9 +22,9 @@ BH = findBH(s)
 print BH
 
 
-for i in currenthalo:
+for i in BH:
     # which halo are we on?  
-    currentBH = halos[i]
+    currentBH = BH[i]
     print 'current halo: ',currentBH
         
     # put your galaxy that you care about in the center of the simulation
