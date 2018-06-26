@@ -21,16 +21,23 @@ def findBH(s):
 BH = findBH(s)
 print BH
 
+def findBHhalos(s):
+    BH = findBH(s)
+    BHhalos = BH['amiga.grp']
+    return BHhalos
+halos = findBHhalos(s)
+print halos 
 
-for i in BH:
+
+for i in halos:
     # which halo are we on?  
-    currentBH = BH[i]
+    currentBH = halos[i]
     print 'current halo: ',currentBH
         
     # put your galaxy that you care about in the center of the simulation
-    halo= currentBH
-    pynbody.analysis.angmom.faceon(h[halo])
-    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+    i = currentBH
+    pynbody.analysis.angmom.faceon(h[i])
+    with pynbody.analysis.halo.center(h[i], mode='hyb'):
      
     # the position of black hole
          #BHposition=BH['pos']
