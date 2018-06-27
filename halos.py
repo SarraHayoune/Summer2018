@@ -48,13 +48,13 @@ for i in currenthalo:
          print BHposition
       
    # x-values 
-         BHx= BHposition[:,0]
+         BHx= BHposition[i,0]
     
    # y-values 
-         BHy= BHposition[:,1]  
+         BHy= BHposition[i,1]  
     
    # z-values
-         BHz= BHposition[:,2]
+         BHz= BHposition[i,2]
       
     #this is the distance formula
          distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
