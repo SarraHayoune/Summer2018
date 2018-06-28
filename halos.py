@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pylab as plt
 
 # loading the snapshot
-s = pynbody.load('/mnt/storm/storm.cosmo25cmb.4096g5HbwK1BH.004096/storm.cosmo25cmb.4096g5HbwK1BH.004096')
+s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
 
 # convert the units 
 s.physical_units()
@@ -36,7 +36,7 @@ for i in currenthalo:
     # which halo are we on?  
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
-    halo =0
+ 
     currenthalo= halo
        # put your galaxy that you care about in the center of the simulation
       
