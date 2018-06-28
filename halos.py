@@ -37,11 +37,11 @@ for i in currenthalo:
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
  
-    currenthalo= halo
+ 
        # put your galaxy that you care about in the center of the simulation
       
-    pynbody.analysis.angmom.faceon(h[halo])
-    with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+    pynbody.analysis.angmom.faceon(h[currenthalo])
+    with pynbody.analysis.halo.center(h[currenthalo], mode='hyb'):
      
     # the position of black hole
          BHposition=BH['pos']
