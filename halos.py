@@ -36,10 +36,7 @@ for i in currenthalo:
     # which halo are we on?  
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
- 
-    if currenthalo != halos:  # need to center on new halo
-       print currenthalo
-       halo= currenthalo
+     
      
        
        # put your galaxy that you care about in the center of the simulation
