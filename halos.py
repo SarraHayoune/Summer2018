@@ -37,7 +37,7 @@ for i in currenthalo:
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
  
-    if currenthalo != halo:  # need to center on new halo
+    if currenthalo != halos:  # need to center on new halo
        print currenthalo
        halo= currenthalo
      
