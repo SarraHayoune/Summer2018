@@ -39,7 +39,7 @@ for i in currenthalo:
     print 'current halo: ', currenthalo
     print i
     # loop through each BH
-    for j in i
+    for j in currenthalo
         print 'second halo', j
         
        # put your galaxy that you care about in the center of the simulation
