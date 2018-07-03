@@ -30,20 +30,28 @@ def findBHhalos(s):
 halos = findBHhalos(s)
 print halos
 
-currenthalo = np.argsort(halos)
-print halos[currenthalo] 
-print currenthalo
-i =0
-for i in currenthalo:
-    print i
-    i =i +1
+#currenthalo = np.argsort(halos)
+#print halos[currenthalo] 
+#print currenthalo
+#i =0
+#for i in currenthalo:
+    #print i
+    #i =i +1
     #print 'current halo: ', i
     #for halo in i: 
         #print (j
         #print 'current halo: ',j
     
        
+ for halo in halos:  
+    sortedhaloinds = np.argsort(halos)
+    print halos[sortedhaloinds]
+    halo = 0  # initialize what halo we are on
    
+    for i in sortedhaloinds:
+        # which halo are we on?  need to center 
+        currenthalo = halos[i]
+        print 'current halo: ',currenthalo  
         
        # put your galaxy that you care about in the center of the simulation
       
