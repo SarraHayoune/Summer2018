@@ -34,10 +34,11 @@ print halos[currenthalo]
 i =0
 for halo in currenthalo:
     currenthalo= halos[halo]
+    print 'current halo: ', currenthalo
     for i in halo
     # which halo are we on?  
     
-        print 'current halo: ', currenthalo
+         print halo  
     
         
        # put your galaxy that you care about in the center of the simulation
