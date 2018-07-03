@@ -31,13 +31,14 @@ print halos
 
 currenthalo = np.argsort(halos)
 print halos[currenthalo] 
+print currenthalo
 
 for i in currenthalo:
-    currenthalo= halos[i]
-    print 'current halo: ',(i)
-    for j in currenthalo:
-        currenthalo= halos [j]
-        print 'current halo: ',(j)
+    print i
+    print 'current halo: ', i
+    for j in currenthalo: 
+        print j
+        print 'current halo: ',j
     
        
    
