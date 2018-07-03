@@ -32,16 +32,14 @@ print halos
 currenthalo = np.argsort(halos)
 print halos[currenthalo] 
 
-for halo in currenthalo:
-    currenthalo= halos[halo]
-    print 'current halo: ', currenthalo
-    i = 0
-    while i < len(currenthalo):
-          print(currethaslo[i])
-          i += 1
-    # which halo are we on?  
+for i in currenthalo:
+    currenthalo= halos[i]
+    print 'current halo: ',(i)
+    for j in currenthalo
+        print 'current halo: ',(j)
+    
+       
    
-  
         
        # put your galaxy that you care about in the center of the simulation
       
@@ -54,13 +52,14 @@ for halo in currenthalo:
       
    # x-values 
          BHx= BHposition[i,0]
+         BHx= BHposition[j,0]
     
    # y-values 
          BHy= BHposition[i,1]  
-    
+         BHy= BHposition[j,1]  
    # z-values
          BHz= BHposition[i,2]
-      
+         BHz= BHposition[j,1]  
     #this is the distance formula
          distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
          print 'distance:', distance
