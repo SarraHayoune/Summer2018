@@ -31,14 +31,14 @@ print halos
 
 currenthalo = np.argsort(halos)
 print halos[currenthalo] 
-
+i =0
 for i in currenthalo:
     
     # which halo are we on?  
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
     print currenthalo
-    i +
+    i + =1
     # loop through each BH
     
         
