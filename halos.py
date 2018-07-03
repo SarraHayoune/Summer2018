@@ -40,8 +40,8 @@ for i in currenthalo:
     if currenthalo != halo:  # need to center on new halo
        halo= currenthalo
        
-      pynbody.analysis.angmom.faceon(h[currenthalo])
-      with pynbody.analysis.halo.center(h[currenthalo], mode='hyb'):
+    pynbody.analysis.angmom.faceon(h[currenthalo])
+    with pynbody.analysis.halo.center(h[currenthalo], mode='hyb'):
      
     # the position of black hole
            BHposition=BH['pos']
