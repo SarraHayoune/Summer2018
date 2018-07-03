@@ -4,7 +4,7 @@ import pynbody
 import numpy as np
 import pandas as pd
 import matplotlib.pylab as plt
-%matplotlib inline
+% matplotlib inline
 
 # loading the snapshot
 s = pynbody.load('/mnt/storm/storm.cosmo25cmb.4096g5HbwK1BH.004096/storm.cosmo25cmb.4096g5HbwK1BH.004096')   
