@@ -37,8 +37,11 @@ for i in currenthalo:
     # which halo are we on?  
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
+    print i
     # loop through each BH
-    i + = 0
+    for j in i
+        print 'second halo', j
+        
        # put your galaxy that you care about in the center of the simulation
       
     pynbody.analysis.angmom.faceon(h[currenthalo])
