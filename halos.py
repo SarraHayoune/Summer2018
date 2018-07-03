@@ -40,12 +40,12 @@ for i in currenthalo:
     if currenthalo != halo:  # need to center on new halo
        halo= currenthalo
        if currenthalo != halo:  # need to center on new halo
-       halo= currenthalo
+          halo= currenthalo
      
        # put your galaxy that you care about in the center of the simulation
       
-       pynbody.analysis.angmom.faceon(h[halo])
-       with pynbody.analysis.halo.center(h[halo], mode='hyb'):
+           pynbody.analysis.angmom.faceon(h[halo])
+           with pynbody.analysis.halo.center(h[halo], mode='hyb'):
      
     # the position of black hole
             BHposition=BH['pos']
