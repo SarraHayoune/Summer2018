@@ -43,7 +43,7 @@ print halos
         #print 'current halo: ',j
     
        
- for halo in halos:  
+for halo in halos:  
     sortedhaloinds = np.argsort(halos)
     print halos[sortedhaloinds]
     halo = 0  # initialize what halo we are on
