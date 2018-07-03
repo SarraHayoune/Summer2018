@@ -35,7 +35,7 @@ i =0
 for halo in currenthalo:
     currenthalo= halos[halo]
     print 'current halo: ', currenthalo
-    for i in halo
+    for i in halo :
     # which halo are we on?  
     
          print halo  
