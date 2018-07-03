@@ -2,6 +2,7 @@
 
 import pynbody 
 import numpy as np
+import panda as pd
 import matplotlib.pylab as plt
 
 # loading the snapshot
