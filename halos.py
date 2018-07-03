@@ -35,7 +35,8 @@ print halos[currenthalo]
 for i in currenthalo:
     currenthalo= halos[i]
     print 'current halo: ',(i)
-    for j in currenthalo
+    for j in currenthalo:
+        currenthalo= halos [j]
         print 'current halo: ',(j)
     
        
