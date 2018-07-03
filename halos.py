@@ -32,14 +32,12 @@ print halos
 currenthalo = np.argsort(halos)
 print halos[currenthalo] 
 i =0
-for i in currenthalo:
-    
+for halo in currenthalo:
+    currenthalo= halos[halo]
+    for i in halo
     # which halo are we on?  
-    currenthalo= halos[i]
-    print 'current halo: ', currenthalo
-    print currenthalo
-    i +=1
-    # loop through each BH
+    
+        print 'current halo: ', currenthalo
     
         
        # put your galaxy that you care about in the center of the simulation
