@@ -38,7 +38,7 @@ for i in currenthalo:
     print 'current halo: ', currenthalo
     # loop through each BH
     for i in range(len(currenthalo)):
-    print (currenthalo[i])
+        print (currenthalo[i])
        # put your galaxy that you care about in the center of the simulation
       
     pynbody.analysis.angmom.faceon(h[currenthalo])
