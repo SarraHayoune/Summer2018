@@ -38,7 +38,7 @@ for i in currenthalo:
     currenthalo= halos[i]
     print 'current halo: ', currenthalo
     print currenthalo
-    i + =1
+    i + ==1
     # loop through each BH
     
         
