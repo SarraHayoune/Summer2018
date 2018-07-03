@@ -35,9 +35,9 @@ print halos[currenthalo]
 print currenthalo
 #i =0
 for i in currenthalo:
+    currenthalo= halos[i]
     print i
-    for j in i:
-        print j
+    
 pynbody.analysis.angmom.faceon(h[currenthalo])
 with pynbody.analysis.halo.center(h[currenthalo], mode='hyb'):
      
