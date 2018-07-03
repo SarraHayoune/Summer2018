@@ -35,10 +35,10 @@ print currenthalo
 
 for i in currenthalo:
     print i
-    print 'current halo: ', i
-    for j in currenthalo: 
+    #print 'current halo: ', i
+    for j in i: 
         print j
-        print 'current halo: ',j
+        #print 'current halo: ',j
     
        
    
@@ -54,14 +54,14 @@ for i in currenthalo:
       
    # x-values 
          BHx= BHposition[i,0]
-         BHx= BHposition[j,0]
+         
     
    # y-values 
          BHy= BHposition[i,1]  
-         BHy= BHposition[j,1]  
+          
    # z-values
          BHz= BHposition[i,2]
-         BHz= BHposition[j,1]  
+         
     #this is the distance formula
          distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
          print 'distance:', distance
