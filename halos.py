@@ -36,10 +36,8 @@ print currenthalo
 #i =0
 for i in currenthalo:
     print i
-    halo=0
-    if currenthalo != halo:  # need to center on new halo
-       halo= currenthalo
-       
+    for j in i:
+        print j
 pynbody.analysis.angmom.faceon(h[currenthalo])
 with pynbody.analysis.halo.center(h[currenthalo], mode='hyb'):
      
@@ -48,13 +46,13 @@ with pynbody.analysis.halo.center(h[currenthalo], mode='hyb'):
            print BHposition
       
    # x-values 
-           BHx= BHposition[i,0]
+           BHx= BHposition[:,0]
     
    # y-values 
-           BHy= BHposition[i,1]  
+           BHy= BHposition[:,1]  
     
    # z-values
-           BHz= BHposition[i,2]
+           BHz= BHposition[:,2]
       
     #this is the distance formula
            distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
