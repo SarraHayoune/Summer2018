@@ -37,8 +37,8 @@ for halo in currenthalo:
     print 'current halo: ', currenthalo
     i = 0
     while i < len(currenthalo):
-    print(currethaslo[i])
-    i += 1
+          print(currethaslo[i])
+          i += 1
     # which halo are we on?  
    
   
