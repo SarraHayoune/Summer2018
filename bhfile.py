@@ -88,4 +88,4 @@ for i in currenthalo:
     print "this is the distance :", distance
 f =  open(bhfile.dat, "w") 
 data = [[BH['mass'][i],BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],getz(s),gettime(s),BH['iord'][i],BH['r'][i]]
-f.close()
+close()
