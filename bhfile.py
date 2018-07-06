@@ -43,9 +43,13 @@ print BHhalos
 
 def getz(s):
     return s.properties['z']
+redshift = getz(s)
+print 'redshift: ', redshift
 
 def gettime(s):
     return pynbody.analysis.cosmology.age(s)
+age= gettime(s)
+print 'age: ", age
 
 #sorting the halos, indexes/indecis are like an exact address
 currenthalo = np.argsort(BHhalos)
