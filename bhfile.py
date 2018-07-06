@@ -53,9 +53,6 @@ def gettime(s):
     return pynbody.analysis.cosmology.age(s)
 
 f = open("bhfile.dat","w")
-# initialize dataframe
-columns = ['mass','haloid','BHpos','BHvel','redshift','time','bhiord','halodist','Mvir','Mstar','Mgas']
-bhinfo = pd.DataFrame(columns=columns)
 for i in currenthalo:
 
     #which halo are we on?
