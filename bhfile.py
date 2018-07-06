@@ -54,7 +54,7 @@ def gettime(s):
 
 
 for i in currenthalo:
-    f=  open(bhfile+".dat", "w") 
+    f =  open(bhfile.dat, "w") 
     print f 
     #which halo are we on?
     currenthalo = BHhalos[i]
@@ -88,5 +88,5 @@ for i in currenthalo:
     print "this is the distance :", distance
 
     data = [[BH['mass'][i],BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],getz(s),gettime(s),BH['iord'][i],BH['r'][i]]
-    write(data)
-    close(f)
+    f.write(data[i])
+    f.close()
