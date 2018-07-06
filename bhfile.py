@@ -52,7 +52,8 @@ def getz(s):
 def gettime(s):
     return pynbody.analysis.cosmology.age(s)
 
-
+f=  open(“bhfile.py”,”w”) 
+Print f 
 for i in currenthalo:
     f = open("bhfile.dat","w")
     #which halo are we on?
@@ -87,5 +88,5 @@ for i in currenthalo:
     print "this is the distance :", distance
 
     data = [[BH['mass'][i],BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],getz(s),gettime(s),BH['iord'][i],BH['r'][i]]
-    
-    f.close()
+f.write(data)
+f.close(data)
