@@ -46,6 +46,12 @@ print BHhalos
 currenthalo = np.argsort(BHhalos)
 print BHhalos[currenthalo]
 
+def getz(s):
+    return s.properties['z']
+
+def gettime(s):
+    return pynbody.analysis.cosmology.age(s)
+
 f = open("bhfile.dat","w")
 # initialize dataframe
 columns = ['mass','haloid','BHpos','BHvel','redshift','time','bhiord','halodist','Mvir','Mstar','Mgas']
@@ -59,13 +65,6 @@ for i in currenthalo:
     
     #put the galaxy you care about in the center of the simulation
     pynbody.analysis.angmom.faceon(h[currenthalo])
-    #with pynbody.analysis.halo.center(h[currenthalo], mode='hyb'):
-
-#for halo in BHhalos:
-#    halo/galaxy we need to look at is no. 2
-#    pynbody.analysis.angmom.faceon(h[halo])
-#    prints the black hole
-#    print BH
 
     #this is the position of black hole
     BHposition=BH['pos']
@@ -90,7 +89,7 @@ for i in currenthalo:
     #print 'this is the distance :'
     print "this is the distance :", distance
 
-    data = [[BH['mass'][i],BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],getz(s),gettime(s),BH['iord'][i],BH['r'][i],virialmass,starmass,gasmass]]
+    data = [[BH['mass'][i],BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],getz(s),gettime(s),BH['iord'][i],BH['r'][i]]
     info = pd.DataFrame(data,columns=columns)
     bhinfo = bhinfo.append(info)
     close()
