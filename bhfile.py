@@ -52,7 +52,7 @@ def getz(s):
 def gettime(s):
     return pynbody.analysis.cosmology.age(s)
 
-f=  open(“bhfile.txt”,”w”) 
+f=  open(bhfile.txt,”w”) 
 Print f 
 for i in currenthalo:
     f = open("bhfile.dat","w")
