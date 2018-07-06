@@ -10,6 +10,11 @@ import pynbody
 import numpy as np
 import pandas as pd
 import matplotlib.pylab as plt
+import os
+pd.set_option('display.max_column', None)
+pd.set_option('display.max_rows', None)
+import readcol
+import gc
 
 
 # loading the snapshot
