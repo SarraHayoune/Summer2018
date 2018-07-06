@@ -48,7 +48,7 @@ print BHhalos
 currenthalo = np.argsort(BHhalos)
 print BHhalos[currenthalo]
 
-f = open(bhfile.dat","w")
+f = open("bhfile.dat","w")
 # initialize dataframe
 columns = ['mass','haloid','BHpos','BHvel','redshift','time','bhiord','halodist','Mvir','Mstar','Mgas']
 bhinfo = pd.DataFrame(columns=columns)
