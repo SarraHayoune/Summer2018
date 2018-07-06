@@ -43,21 +43,15 @@ print BHhalos
 currenthalo = np.argsort(BHhalos)
 print BHhalos[currenthalo]
 
+f = open(bhfile.dat","w")
+# initialize dataframe
+columns = ['mass','haloid','BHpos','BHvel','redshift','time','bhiord','halodist','Mvir','Mstar','Mgas']
+bhinfo = pd.DataFrame(columns=columns)
 for i in currenthalo:
 
     #which halo are we on?
     currenthalo = BHhalos[i]
     print 'current halo: ', currenthalo
-    def getz(s):
-    return s.properties['z']
-    redshift = getz(s)
-    print 'redshift: ', redshift
-
-    def gettime(s):
-    return pynbody.analysis.cosmology.age(s)
-    age = gettime(s)
-    print 'age: ', age
-
     print i
     
     #put the galaxy you care about in the center of the simulation
@@ -93,3 +87,7 @@ for i in currenthalo:
     #print 'this is the distance :'
     print "this is the distance :", distance
 
+    data = [[BH['mass'][i],BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],getz(s),gettime(s),BH['iord'][i],BH['r'][i],virialmass,starmass,gasmass]]
+            info = pd.DataFrame(data,columns=columns)
+            bhinfo = bhinfo.append(info)
+    close().
