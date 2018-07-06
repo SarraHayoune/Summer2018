@@ -48,7 +48,7 @@ print 'redshift: ', redshift
 
 def gettime(s):
     return pynbody.analysis.cosmology.age(s)
-age= gettime(s)
+age = gettime(s)
 print 'age: ", age
 
 #sorting the halos, indexes/indecis are like an exact address
