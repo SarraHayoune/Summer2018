@@ -55,7 +55,7 @@ def gettime(s):
 f=  open(bhfile+".dat",”w”) 
 Print f 
 for i in currenthalo:
-    f = open("bhfile.dat","w")
+    f = open("bhfile.dat",'w')
     #which halo are we on?
     currenthalo = BHhalos[i]
     print 'current halo: ', currenthalo
