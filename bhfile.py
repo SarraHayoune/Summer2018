@@ -55,7 +55,7 @@ print BHhalos[currenthalo]
 
 
 for i in currenthalo:
-    f =  open("bhfile.txt", "w") 
+    f =  open("bhfile.dat", "w") 
     #which halo are we on?
     currenthalo = BHhalos[i]
     print 'current halo: ', currenthalo
@@ -89,7 +89,9 @@ for i in currenthalo:
 
     data = [BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]]
     f.write (str(data))
-    f= open("list.txt","r")
+    f= open("list.dat","r")
+
+    
     print data
     f.close()
     
