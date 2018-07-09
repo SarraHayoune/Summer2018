@@ -11,7 +11,7 @@ f= open("list.txt","w+")
 data = ["banana","apple","potato", "tomato"]
 f.write("data")
 #f= open("list.txt","r")
-print (f.read(data))
+print (f.read(3))
 f.close()
 #print df
 
