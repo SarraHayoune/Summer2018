@@ -89,6 +89,8 @@ for i in currenthalo:
 
     data = [BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]]
     f.write (data)
+    f= open("list.txt","r")
+    print f.read()
     f.close()
     
 
