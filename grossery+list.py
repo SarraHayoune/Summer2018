@@ -5,9 +5,11 @@
 
 
 import pandas as pd
+
+data = ["banana","apple","potato", "tomato"]
 f= open("list.txt","w+")
-#data = ['banana','apple','fraise']
-f.write("banana, apple")
+#
+f.write("data")
 #f= open("list.txt","r")
 print f.read()
 f.close()
