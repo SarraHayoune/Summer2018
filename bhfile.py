@@ -86,13 +86,11 @@ for i in currenthalo:
     distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
     print "this is the distance :", distance
-
-    data = [BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]]
-    f.write (str(data))
-    f= open("list.dat","r")
-
-    
-    print data
-    f.close()
+    for data in i:
+        data = [BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]]
+        f.write (str(data))
+        f= open("list.dat","r")
+        print data
+        f.close()
     
 
