@@ -91,6 +91,6 @@ for i in currenthalo:
     f.write (str(data))
     f= open("list.txt","r")
     print data
-f.close()
+    f.close()
     
 
