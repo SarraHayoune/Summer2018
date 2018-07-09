@@ -6,12 +6,12 @@
 
 import pandas as pd
 
-data = ["banana","apple","potato", "tomato"]
+
 f= open("list.txt","w+")
-#
+data = ["banana","apple","potato", "tomato"]
 f.write("data")
 #f= open("list.txt","r")
-print f.read(data)
+print (f.read(data))
 f.close()
 #print df
 
