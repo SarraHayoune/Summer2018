@@ -1,10 +1,5 @@
 
-# coding: utf-8
-
-# In[ ]:
-
-
-# Assignement2" FIND ALL THE BLACK HOLES "
+# Assignement3: Create a file and save it
 
 import pynbody 
 import numpy as np
@@ -93,5 +88,3 @@ for i in currenthalo:
     f= open("list.dat","r")
     print data
     f.close()
-    
-
