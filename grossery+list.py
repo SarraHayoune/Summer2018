@@ -7,12 +7,12 @@
 import pandas as pd
 
 
-f= open("list.txt","w+")
+f= open("list.txt","w")
 data = ["banana","apple","potato", "tomato"]
 f.write("data")
-#f= open("list.txt","r")
-for data in f:
-    print (data)
+f= open("list.txt","r")
+
+print f.read()
 f.close()
 #print df
 
