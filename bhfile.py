@@ -46,7 +46,9 @@ print BHhalos[currenthalo]
 
 #def gettime(s):
     #return pynbody.analysis.cosmology.age(s)
-# initialize datafram
+# initialize dataframe
+columns = ['BHpos','BHvel','redshift','time','bhiord','halodist']
+bhinfo = pd.DataFrame(columns=columns)
 
 
 for i in currenthalo:
@@ -82,9 +84,10 @@ for i in currenthalo:
     #print 'this is the distance :'
     print "this is the distance :", distance
     data = [BHhalos[i],BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]]
-    
-        
-    f.write (str(data))
-    f= open("list.dat","r")
-    print data
+    for j in data:
+        info = pd.DataFrame(data,columns=columns)
+        bhinfo = bhinfo.append(info)
+        #f.write (str(data))
+        f= open("list.dat","r")
+        print data
     f.close()
