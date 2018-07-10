@@ -83,7 +83,7 @@ for i in currenthalo:
     distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
     print "this is the distance :", distance
-    data = [BH['distance'][i],BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]] 
+    data = [BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]] 
     f.write (str(data))
     f= open("bhfile.dat","r")
     for j in data:
