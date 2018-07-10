@@ -15,7 +15,7 @@ f= open("list.txt","r")
 list = f.readline()
 while list:
       data= list.split()
-      
+      f.write(data+'\n')
       print (data)
       list = f.readline()
 f.close()
