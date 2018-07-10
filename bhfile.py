@@ -88,6 +88,6 @@ for i in currenthalo:
        # info = pd.DataFrame(data,columns=columns)
        # bhinfo = bhinfo.append(info)
         #f.write (str(data))
-        f= open("list.dat","r")
+        f= open("bhfile.dat","r")
         print data
     f.close()
