@@ -7,7 +7,7 @@
 import pandas as pd
 
 
-f= open("list.txt","a+")
+f= open("list.txt","w")
 data = ["banana.\n","apple.\n","potato.\n", "tomato.\n"]
 f.write(str(data))
 f= open("list.txt","r")
