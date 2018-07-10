@@ -11,8 +11,11 @@ f= open("list.txt","w")
 data = [1,2,3,4,"banana","apple","potato", "tomato"]
 f.write(str(data))
 f= open("list.txt","r")
-for eachitem in data:
-    f.write(str(eachitem)+'\n')
+
+f= open("list.txt","w")
+for i in data:
+    f.write(str(i)+'\n')
+    print i
 
 
 
