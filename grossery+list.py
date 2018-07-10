@@ -15,7 +15,7 @@ f= open("list.txt","r")
 list = f.readline()
 while list:
       items= list.split()
-      dataitems= items[]
+      dataitems= items()
       print (dataitems)
       list = f.readline()
 f.close()
