@@ -90,7 +90,7 @@ for i in currenthalo:
         f= open("bhfile.dat","w")
        # info = pd.DataFrame(data,columns=columns)
        # bhinfo = bhinfo.append(info)
-        f.read (str(i)+'\n')
+        f.write(str(i)+'\n')
         print j
         
 
