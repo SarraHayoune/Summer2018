@@ -9,7 +9,7 @@ import pandas as pd
 
 f= open("list.txt","a+")
 data = ["banana\n","apple\n","potato\n", "tomato\n"]
-f.write(data)
+f.write(str(data))
 f= open("list.txt","r")
 
 print f.read()
