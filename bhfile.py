@@ -85,12 +85,12 @@ for i in currenthalo:
     print "this is the distance :", distance
     data = [BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]] 
     f.write (str(data))
-    f= open("bhfile.txt","w")
+    f= open("bhfile.txt","w+")
     for j in data:
-        f= open("bhfile.txt","w")
+        f= open("bhfile.txt","r")
        # info = pd.DataFrame(data,columns=columns)
        # bhinfo = bhinfo.append(info)
-        f.write(str(i))
+        f.read(str(i))
         print j
         
 
