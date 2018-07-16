@@ -52,7 +52,7 @@ print BHhalos[currenthalo]
 
 
 for i in currenthalo:
-    f =  open("bhfile.txt", "w") 
+    f =  open("bhfile.txt", "a+") 
     #which halo are we on?
     currenthalo = BHhalos[i]
     print 'current halo: ', currenthalo
@@ -85,12 +85,12 @@ for i in currenthalo:
     print "this is the distance :", distance
     data = [BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]] 
     f.write (str(data))
-    f= open("bhfile.txt","r")
+    f= open("bhfile.txt","a+")
     for j in data:
-        f= open("bhfile.txt","w")
+        f= open("bhfile.txt","a+")
        # info = pd.DataFrame(data,columns=columns)
        # bhinfo = bhinfo.append(info)
-        f.write(str(i)+'\n')
+        f.write(str(i))
         print j
         
 
