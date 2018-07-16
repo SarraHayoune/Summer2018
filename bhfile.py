@@ -44,8 +44,8 @@ print BHhalos[currenthalo]
 #def getz(s):
     #return s.properties['z']
 
-#def gettime(s):
-    #return pynbody.analysis.cosmology.age(s)
+def gettime(s):
+    return pynbody.analysis.cosmology.age(s)
 # initialize dataframe
 #columns = ['BHpos','BHvel','redshift','time','bhiord','halodist']
 #bhinfo = pd.DataFrame(columns=columns)
@@ -83,8 +83,8 @@ for i in currenthalo:
     distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
     print "this is the distance :", distance
-    data = [BH['pos'][i].in_units('kpc'),BH['vel'][i],BH['iord'][i],BH['r'][i]] 
-    f.write(str(data))
+    data = [gettime(s),currenthalo,BH['iord'][i],BH['r'][i], distance[0]] 
+    f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
         #f= open("bhfile.dat","w+")
