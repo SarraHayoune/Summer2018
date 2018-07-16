@@ -83,7 +83,7 @@ for i in currenthalo:
     distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
     print "this is the distance :", distance
-    data = [gettime(s),currenthalo,BH['iord'][i],BH['r'][i], distance[0]] 
+    data = [currenthalo,gettime(s),BH['iord'][i],BH['r'][i], distance[0]] 
     f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
