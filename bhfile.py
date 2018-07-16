@@ -52,7 +52,7 @@ print BHhalos[currenthalo]
 
 
 for i in currenthalo:
-    f =  open("bhfile.txt", "w+") 
+    f =  open("bhfile.dat", "w+") 
     #which halo are we on?
     currenthalo = BHhalos[i]
     print 'current halo: ', currenthalo
@@ -87,7 +87,7 @@ for i in currenthalo:
     f.write (str(data))
     #f= open("bhfile.txt","w+")
     for j in data:
-        f= open("bhfile.txt","w+")
+        f= open("bhfile.dat","w+")
        # info = pd.DataFrame(data,columns=columns)
        # bhinfo = bhinfo.append(info)
         f.read(str(i))
