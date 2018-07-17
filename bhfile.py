@@ -41,8 +41,8 @@ print BHhalos
 currenthalo = np.argsort(BHhalos)
 print BHhalos[currenthalo]
 
-#def getz(s):
-    #return s.properties['z']
+def getz(s):
+    return s.properties['z']
 
 def gettime(s):
     return pynbody.analysis.cosmology.age(s)
@@ -83,7 +83,7 @@ for i in currenthalo:
     distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
     print "this is the distance :", distance
-    data = [currenthalo,gettime(s),BH['iord'][i],BH['r'][i], distance[0]] 
+    data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], , BH['r'][i],] 
     f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
