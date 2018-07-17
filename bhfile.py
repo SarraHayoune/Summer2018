@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as plt
 import os
-#pd.set_option('display.max_column', None)
-#pd.set_option('display.max_rows', None)
+pd.set_option('display.max_column', None)
+pd.set_option('display.max_rows', None)
 
 
 # loading the snapshot
@@ -83,7 +83,7 @@ for i in currenthalo:
     distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
     print "this is the distance :", distance
-    data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i],BH['vel'][i] , BH['r'][i], distance, BH['pos'][i]] 
+    data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i],BH['vel'][i] , BH['r'][i], distance] 
     f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
