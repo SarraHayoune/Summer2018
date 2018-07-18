@@ -49,9 +49,9 @@ def gettime(s):
 # initialize dataframe
 #columns = ['BHpos','BHvel','redshift','time','bhiord','halodist']
 #bhinfo = pd.DataFrame(columns=columns)
- starmass = h[currenthalo].s['mass'].sum()
- gasmass = h[currenthalo].g['mass'].sum()
- virialmass = starmass+gasmass+h[currenthalo].d['mass'].sum()
+starmass = h[currenthalo].s['mass'].sum()
+gasmass = h[currenthalo].g['mass'].sum()
+virialmass = starmass+gasmass+h[currenthalo].d['mass'].sum()
 
 f =  open("bhfile.dat", "w+") 
 for i in currenthalo:
