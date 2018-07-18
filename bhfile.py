@@ -85,9 +85,9 @@ for i in currenthalo:
     #print 'this is the distance :'
     print "this is the distance :", distance
     
-    starmass = currenthalo.s['mass']
-    gasmass = currenthalo.g['mass']
-    virialmass = starmass+gasmass+currenthalo.d['mass']
+    #starmass = currenthalo.s['mass']
+    #gasmass = currenthalo.g['mass']
+    #virialmass = starmass+gasmass+currenthalo.d['mass']
     data = [currenthalo, BH['iord'][i], virialmass, gettime(s),getz(s), BH['vel'][i], BH['mass'][i], BH['r'][i]] 
     f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
