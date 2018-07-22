@@ -1,0 +1,6 @@
+#time	haloID	BHmass	BHdistance
+1	4	17	0.1
+2	5	18	0.5
+3	4	18	0.2
+4	4	20	0.7
+5	3	27	0.01
