@@ -96,7 +96,7 @@ for file in files:
        # info = pd.DataFrame(data,columns=columns)
        # bhinfo = bhinfo.append(info)
         #f.write(str(i))
-     print data
+    print data
          
 f.close()
 
