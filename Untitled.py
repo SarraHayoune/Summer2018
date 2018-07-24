@@ -10,8 +10,8 @@ import readcol
 
 
 files = readcol.readcol('testdata.txt')
-Time= files[:,0]
-BHDistance= files[:,1]
+Time= files[:,1]
+BHDistance= files[:,3]
 
 plt.plot(Time, BHDistance)
 plt.ylabel('BH Distance')
