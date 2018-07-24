@@ -1,21 +1,15 @@
 
-# coding: utf-8
-
-# In[ ]:
-
-
-# Assignement3: Create a file and save it
-
+# Assignement4: make the time loop
 import pynbody 
 import numpy as np
 import pandas as pd
 import matplotlib.pylab as plt
-import os
-pd.set_option('display.max_column', None)
-pd.set_option('display.max_rows', None)
+import readcol
+
 
 files = readcol.readcol('files.list')
 files = files[:,0]
+
 # loading the snapshot
 s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
 
