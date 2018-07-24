@@ -50,53 +50,53 @@ def gettime(s):
 #columns = ['BHpos','BHvel','redshift','time','bhiord','halodist']
 #bhinfo = pd.DataFrame(columns=columns)
 
-
-f =  open("bhfile.dat", "w+") 
-for i in currenthalo:
+#f =  open("bhfile.dat", "w+") 
+for file in files:
+    for i in currenthalo:
     
-    #which halo are we on?
-    currenthalo = BHhalos[i]
-    print 'current halo: ', currenthalo
-    print i
+        #which halo are we on?
+        currenthalo = BHhalos[i]
+        print 'current halo: ', currenthalo
+        print i
     
-    #put the galaxy you care about in the center of the simulation
-    pynbody.analysis.angmom.faceon(h[currenthalo])
+        #put the galaxy you care about in the center of the simulation
+        pynbody.analysis.angmom.faceon(h[currenthalo])
 
     #this is the position of black hole
-    BHposition=BH['pos']
+        BHposition=BH['pos']
 
     #printing the position of black hole
     #print BHposition
 
     #putting the x-values into a column
-    BHx= BHposition[[i],0]
-    print "x postion", BHx
-
+        BHx= BHposition[[i],0]
+        print "x postion", BHx
+   
     #putting the y-values into a column
-    BHy= BHposition[[i],1]
-    print "y position", BHy
+       BHy= BHposition[[i],1]
+       print "y position", BHy
 
-    #putting the z-values into a column
-    BHz= BHposition[[i],2]
-    print "z position", BHz
+         #putting the z-values into a column
+       BHz= BHposition[[i],2]
+       print "z position", BHz
 
     #the .5 is the square root , this is the distance formula
-    distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+       distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
-    print "this is the distance :", distance
+       print "this is the distance :", distance
     
     #starmass = currenthalo.s['mass']
     #gasmass = currenthalo.g['mass']
     #virialmass = starmass+gasmass+currenthalo.d['mass']
-    data = [currenthalo, BH['iord'][i], virialmass, gettime(s),getz(s), BH['vel'][i], BH['mass'][i], BH['r'][i]] 
-    f.write(str(data)+'\n')
+       data = [currenthalo, BH['iord'][i], virialmass, gettime(s),getz(s), BH['vel'][i], BH['mass'][i], BH['r'][i]] 
+       f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
         #f= open("bhfile.dat","w+")
        # info = pd.DataFrame(data,columns=columns)
        # bhinfo = bhinfo.append(info)
         #f.write(str(i))
-    print data
+   print data
         
 f.close()
 
