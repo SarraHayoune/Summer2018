@@ -73,23 +73,23 @@ for file in files:
         print "x postion", BHx
    
     #putting the y-values into a column
-       BHy= BHposition[[i],1]
+        BHy= BHposition[[i],1]
        print "y position", BHy
 
          #putting the z-values into a column
-       BHz= BHposition[[i],2]
-       print "z position", BHz
+        BHz= BHposition[[i],2]
+        print "z position", BHz
 
     #the .5 is the square root , this is the distance formula
-       distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
+        distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
     #print 'this is the distance :'
-       print "this is the distance :", distance
+        print "this is the distance :", distance
     
     #starmass = currenthalo.s['mass']
     #gasmass = currenthalo.g['mass']
     #virialmass = starmass+gasmass+currenthalo.d['mass']
-       data = [currenthalo, BH['iord'][i], virialmass, gettime(s),getz(s), BH['vel'][i], BH['mass'][i], BH['r'][i]] 
-       f.write(str(data)+'\n')
+        data = [currenthalo, BH['iord'][i], virialmass, gettime(s),getz(s), BH['vel'][i], BH['mass'][i], BH['r'][i]] 
+        f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
         #f= open("bhfile.dat","w+")
