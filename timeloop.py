@@ -14,7 +14,8 @@ import os
 pd.set_option('display.max_column', None)
 pd.set_option('display.max_rows', None)
 
-
+files = readcol.readcol('files.list')
+files = files[:,0]
 # loading the snapshot
 s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
 
