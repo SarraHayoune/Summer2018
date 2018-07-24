@@ -7,7 +7,7 @@ import matplotlib.pylab as plt
 import readcol
 
 
-files = readcol.readcol('files.list')
+files = readcol.readcol('testdata.dat')
 files = files[:,0]
 
 # loading the snapshot
@@ -89,7 +89,7 @@ for file in files:
     #starmass = currenthalo.s['mass']
     #gasmass = currenthalo.g['mass']
     #virialmass = starmass+gasmass+currenthalo.d['mass']
-        data = [currenthalo, BH['iord'][i], virialmass, gettime(s),getz(s), BH['vel'][i], BH['mass'][i], BH['r'][i]] 
+        data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i]] 
         #f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
