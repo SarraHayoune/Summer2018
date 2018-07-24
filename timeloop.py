@@ -7,7 +7,7 @@ import matplotlib.pylab as plt
 import readcol
 
 
-files = readcol.readcol('testdata.dat')
+files = readcol.readcol('bhfile.dat')
 files = files[:,0]
 
 # loading the snapshot
