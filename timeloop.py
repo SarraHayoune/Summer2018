@@ -74,7 +74,7 @@ for file in files:
    
     #putting the y-values into a column
         BHy= BHposition[[i],1]
-       print "y position", BHy
+        print "y position", BHy
 
          #putting the z-values into a column
         BHz= BHposition[[i],2]
