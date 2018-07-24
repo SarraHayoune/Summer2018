@@ -11,8 +11,7 @@ files = readcol.readcol('bhfile.dat')
 files = files[:,0]
 
 # loading the snapshot
-s =pynbody.load('/mnt/cptmarvel/bhfile.dat')
-    #'/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
+s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
 
 # convert the units 
 s.physical_units()
