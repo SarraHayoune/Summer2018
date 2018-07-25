@@ -27,8 +27,8 @@ print BHDistance
 
 plt.plot(Time, BHDistance)
 
-plt.xlabel('BH Distance')
-plt.ylabel('Time')
+plt.ylabel('BH Distance')
+plt.xlabel('Time')
 plt.show()
 
 
