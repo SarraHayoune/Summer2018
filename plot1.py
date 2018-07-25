@@ -19,8 +19,8 @@ BHDistance= files[:,5]
 
 ID=[89422247, 89422741, 89425759]
 i1= np.where(BHID==89422247)
-#i2= np.where(ID== 89422741)
-#i3= np.where(ID== 89425759)
+i2= np.where(BHID== 89422741)
+i3= np.where(BHID== 89425759)
 
 
 #BHDistance.("]","")
@@ -34,8 +34,8 @@ i1= np.where(BHID==89422247)
 #print BHDistance
 
 plt.plot(Time[i1], BHDistance[i1])
-#plt.plot(Time[i2], BHDistance[i2])
-#plt.plot(Time[i3], BHDistance[i3])
+Plt.plot(Time[i2], BHDistance[i2])
+plt.plot(Time[i3], BHDistance[i3])
 
 plt.ylabel('BH Distance')
 plt.xlabel('Time')
