@@ -18,9 +18,9 @@ Time= files[:,2]
 BHDistance= files[:,5]
 
 ID=[89422247, 89422741, 89425759]
-i1= np.where(ID== 89422247)
-i2= np.where(ID== 89422741)
-i3= np.where(ID== 89425759)
+i1= np.where(ID = 89422247)
+#i2= np.where(ID== 89422741)
+#i3= np.where(ID== 89425759)
 
 
 #BHDistance.("]","")
