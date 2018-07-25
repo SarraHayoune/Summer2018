@@ -17,8 +17,8 @@ Time= files[:,2]
 BHDistance= files[:,5]
 
 plt.plot(Time, BHDistance)
-plt.ylabel('BH Distance')
-plt.xlabel('Time')
+plt.xlabel('BH Distance')
+plt.ylabel('Time')
 plt.show()
 
 
