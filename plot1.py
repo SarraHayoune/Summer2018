@@ -34,7 +34,7 @@ i3= np.where(BHID== 89425759)
 #print BHDistance
 
 plt.plot(Time[i1], BHDistance[i1])
-Plt.plot(Time[i2], BHDistance[i2])
+plt.plot(Time[i2], BHDistance[i2])
 plt.plot(Time[i3], BHDistance[i3])
 
 plt.ylabel('BH Distance')
