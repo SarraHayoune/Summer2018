@@ -1,5 +1,5 @@
 
-# Assignement4: make the time loop
+# Assignement4: make the snap loop
 import pynbody 
 import numpy as np
 import pandas as pd
@@ -15,8 +15,6 @@ def findBH(s):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     BH = s.stars[BHfilter]
     return BH
-BH = findBH(s)
-print BH
 
 #function to find the halos that the galaxy is in
 def findBHhalos(s):
@@ -25,8 +23,6 @@ def findBHhalos(s):
     return BHhalos
 
 #using the function the halos
-BHhalos = findBHhalos(s)
-print BHhalos
 
 
 def getz(s):
@@ -39,7 +35,7 @@ f =  open("bhfile.dat", "w+")
 for file in files:
     
     # loading the snapshotS
-    s =pynbody.load('file')
+    s =pynbody.load(file)
  
     # convert the units 
     s.physical_units()
