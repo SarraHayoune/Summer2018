@@ -78,7 +78,11 @@ for file in files:
         print "the distance is:", distance
     
         data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i]] 
-        f.write(str(data)+'\n')
+        
+        
+        data= str(data)
+        data= data[1:-1]
+        f.write(data+'\n')
     
     print data
          
