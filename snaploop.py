@@ -35,7 +35,7 @@ f =  open("bhfile.dat", "w+")
 for file in files:
     
     # loading the snapshotS
-    s =pynbody.load(file)
+    s =pynbody.load('/mnt/cptmarvel/'+file)
  
     # convert the units 
     s.physical_units()
