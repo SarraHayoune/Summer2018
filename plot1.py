@@ -33,9 +33,9 @@ BHDistance=np.array(BHDistance)
 print Time
 print BHDistance
 
-plt.plot(Time[i1], BHDistance[i1])
-plt.plot(Time[i2], BHDistance[i2])
-plt.plot(Time[i3], BHDistance[i3])
+plt.plot(Time[i1,i2,i3], BHDistance[i1,i2,i3])
+#plt.plot(Time[i2], BHDistance[i2])
+#plt.plot(Time[i3], BHDistance[i3])
 
 plt.ylabel('BH Distance')
 plt.xlabel('Time')
