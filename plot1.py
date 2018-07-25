@@ -12,7 +12,7 @@ import matplotlib
 import readcol
 
 
-files = readcol.readcol('bhfile.dat')
+files = readcol.readcol('bhfile.dat',fsep=',')
 Time= files[:,2]
 BHDistance= files[:,5]
 print Time
