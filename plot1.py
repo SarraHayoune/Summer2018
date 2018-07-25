@@ -15,7 +15,8 @@ import readcol
 files = readcol.readcol('bhfile.dat',fsep=',')
 Time= files[:,2]
 BHDistance= files[:,5]
-BHDistance.replace("]","")
+#BHDistance.("]","")
+np.char.strip(BHDistance)
 Time= np.array(Time)
 
 BHDistance=np.array(BHDistance)
