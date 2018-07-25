@@ -18,9 +18,9 @@ BHDistance= files[:,5]
 print Time
 print BHDistance
 
-Time= float(Time)
+Time= np.array(Time)
 
-
+BHDistance=np.array(BHDistance)
 
 
 
