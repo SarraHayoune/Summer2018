@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[ ]:
-
-
 # Assignement : Run the code on Rogue
 import pynbody 
 import numpy as np
