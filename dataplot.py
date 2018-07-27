@@ -35,7 +35,7 @@ i3= np.where(BHID== 89425759)
 
 plt.plot(Time[i1], BHDistance[i1],  label= "black hole 11")
 plt.plot(Time[i2], BHDistance[i2], label= "black hole 10")
-plt.plot(Time[i3], BHDistance[i3])
+plt.plot(Time[i3], BHDistance[i3], label= "black hole 5")
 
 plt.ylabel("BH Distance 'Kpc'")
 plt.xlabel("Time 'Gyr'")
