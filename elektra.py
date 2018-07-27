@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as plt
 import readcol
-
+import gc
 
 files = readcol.readcol('/data/elektra/files.list')
 files = files[:,0]
@@ -89,9 +89,13 @@ for file in files:
         data= str(data)
         data= data[1:-1]
         f.write(data+'\n')
-    
         print data
-         
+        
+    del(BH)
+    del(h)
+    del(s)
+    gc.collect()
+    
 f.close()
 
 
