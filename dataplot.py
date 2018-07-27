@@ -37,7 +37,7 @@ plt.plot(Time[i1], BHDistance[i1],  label= "black hole 11")
 plt.plot(Time[i2], BHDistance[i2])
 plt.plot(Time[i3], BHDistance[i3])
 
-plt.ylabel("BH Distance 'Kpc')
+plt.ylabel("BH Distance 'Kpc'")
 plt.xlabel("Time 'Gyr'")
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.show()
