@@ -6,7 +6,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-get_ipython().magic(u'matplotlib inline')
+#get_ipython().magic(u'matplotlib inline')
 
 x = np.arange(5)
 #y= [3,1,0,1,1]
