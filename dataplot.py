@@ -12,15 +12,15 @@ import matplotlib
 import readcol
 
 
-files = readcol.readcol('rogue.dat',fsep=',')
+files = readcol.readcol('elektra.dat',fsep=',')
 BHID= files[:,1]
 Time= files[:,2]
 BHDistance= files[:,5]
 
 #ID=[89422247, 89422741, 89425759]
 
-i1= np.where(BHID==307622464)
-#i2= np.where(BHID== 89422741)
+#i1= np.where(BHID==307622464)
+i2= np.where(BHID== 227839049)
 #i3= np.where(BHID== 89425759)
 
 
