@@ -38,14 +38,14 @@ i8= np.where(BHID== 227839049)
 #print Time
 #print BHDistance
 
-plt.plot(Time[i1], BHDistance[i1],  label= "black hole 11")
-plt.plot(Time[i2], BHDistance[i2], label= "black hole 10")
-plt.plot(Time[i3], BHDistance[i3], label= "black hole 5")
-plt.plot(Time[i4], BHDistance[i4], label= "black hole 16")
-plt.plot(Time[i5], BHDistance[i5], label= "black hole 2a")
-plt.plot(Time[i6], BHDistance[i6], label= "black hole 2b")
-plt.plot(Time[i7], BHDistance[i7], label= "black hole 1")
-plt.plot(Time[i8], BHDistance[i8], label= "black hole 3")
+plt.plot(Time[i1], BHDistance[i1],  label= "Captain Marvel")
+plt.plot(Time[i2], BHDistance[i2], label= "Captain Marvel")
+plt.plot(Time[i3], BHDistance[i3], label= "Captain Marvel")
+plt.plot(Time[i4], BHDistance[i4], label= "Storm")
+plt.plot(Time[i5], BHDistance[i5], label= "Strom")
+plt.plot(Time[i6], BHDistance[i6], label= "Storm")
+plt.plot(Time[i7], BHDistance[i7], label= "Rogue")
+plt.plot(Time[i8], BHDistance[i8], label= "Elektra")
 
 plt.ylabel("BH Distance 'Kpc'")
 plt.xlabel("Time 'Gyr'")
