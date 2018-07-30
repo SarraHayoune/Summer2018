@@ -17,10 +17,11 @@ BHID= files[:,1]
 Time= files[:,2]
 BHDistance= files[:,5]
 
-ID=[89422247, 89422741, 89425759]
-i1= np.where(BHID==89422247)
-i2= np.where(BHID== 89422741)
-i3= np.where(BHID== 89425759)
+#ID=[89422247, 89422741, 89425759]
+
+i1= np.where(BHID==307622464)
+#i2= np.where(BHID== 89422741)
+#i3= np.where(BHID== 89425759)
 
 
 #BHDistance.("]","")
@@ -34,8 +35,8 @@ i3= np.where(BHID== 89425759)
 #print BHDistance
 
 plt.plot(Time[i1], BHDistance[i1],  label= "black hole 10")
-plt.plot(Time[i2], BHDistance[i2], label= "black hole 11")
-plt.plot(Time[i3], BHDistance[i3], label= "black hole 5")
+#plt.plot(Time[i2], BHDistance[i2], label= "black hole 11")
+#plt.plot(Time[i3], BHDistance[i3], label= "black hole 5")
 
 plt.ylabel("BH Distance 'Kpc'")
 plt.xlabel("Time 'Gyr'")
