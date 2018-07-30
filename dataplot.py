@@ -12,7 +12,7 @@ import matplotlib
 import readcol
 
 
-files = readcol.readcol('bhfile.dat',fsep=',')
+files = readcol.readcol('rogue.dat',fsep=',')
 BHID= files[:,1]
 Time= files[:,2]
 BHDistance= files[:,5]
