@@ -39,7 +39,11 @@ print BHhalos
 #sorting the halos, indexes/indecis are like an exact address
 currenthalo = np.argsort(BHhalos)
 print BHhalos[currenthalo]
+def getz(s):
+    return s.properties['z']
 
+def gettime(s):
+    return pynbody.analysis.cosmology.age(s)
 for i in currenthalo:
 
     #which halo are we on?
