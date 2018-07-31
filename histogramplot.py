@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 #get_ipython().magic(u'matplotlib inline')
 
-x = np.arange(7)
+x = np.arange(8)
 #y= [3,1,0,1,1]
 
 plt.bar( x,color = 'darkblue', edgecolor = 'black', height=[4,2,0,1,1],width=.5)
