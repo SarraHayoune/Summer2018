@@ -19,5 +19,5 @@ plt.yticks(x+1)
 plt.xlabel('distance from halo center (Kpc)', size = 14)
 plt.ylabel('BH Number', size= 14)
 #plt.legend()
-plt.savefig('plot2.png')
+plt.show('plot2.png')
 
