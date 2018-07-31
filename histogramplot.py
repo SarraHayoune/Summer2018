@@ -11,8 +11,8 @@ import numpy as np
 x = np.arange(5)
 #y= [3,1,0,1,1]
 
-plt.bar( x,color = 'darkblue', edgecolor = 'black', height=[4,2,0,1,1],width=.5)
-plt.xticks(x+.3, [ 0,1,2,3,4])
+plt.bar( x,color = 'darkblue', edgecolor = 'black', height=[4,2,0,1,1],width=.4)
+plt.xticks(x+.25, [ 0,1,2,3,4])
 plt.yticks(x+1)
 
 
