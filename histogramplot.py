@@ -8,10 +8,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 #get_ipython().magic(u'matplotlib inline')
 
-x = np.arange(5)
+x = np.arange(7)
 #y= [3,1,0,1,1]
 
-plt.bar( x,color = 'darkblue', edgecolor = 'black', height=[3,1,0,1,1],width=.5)
+plt.bar( x,color = 'darkblue', edgecolor = 'black', height=[4,2,0,1,1],width=.5)
 plt.xticks(x+.3, [ 0,1,2,3,4])
 plt.yticks(x+1)
 
