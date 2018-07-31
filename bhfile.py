@@ -11,8 +11,8 @@ pd.set_option('display.max_rows', None)
 
 
 # loading the snapshot
-s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
-
+#s =pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
+s =pynbody.load('/data/elektra/elektra.cosmo25cmb.4096g5HbwK1BH.004096/elektra.cosmo25cmb.4096g5HbwK1BH.004096')
 # convert the units 
 s.physical_units()
 
@@ -46,12 +46,9 @@ def getz(s):
 
 def gettime(s):
     return pynbody.analysis.cosmology.age(s)
-# initialize dataframe
-#columns = ['BHpos','BHvel','redshift','time','bhiord','halodist']
-#bhinfo = pd.DataFrame(columns=columns)
 
 
-f =  open("bhfile.dat", "w+") 
+#f =  open("bhfile.dat", "w+") 
 for i in currenthalo:
     
     #which halo are we on?
@@ -85,11 +82,9 @@ for i in currenthalo:
     #print 'this is the distance :'
     print "this is the distance :", distance
     
-    #starmass = currenthalo.s['mass']
-    #gasmass = currenthalo.g['mass']
-    #virialmass = starmass+gasmass+currenthalo.d['mass']
+    
     data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i]] 
-    f.write(str(data)+'\n')
+    ##f.write(str(data)+'\n')
     #f= open("bhfile.txt","w+")
     #for j in data:
         #f= open("bhfile.dat","w+")
@@ -98,4 +93,4 @@ for i in currenthalo:
         #f.write(str(i))
     print data
         
-f.close()
+#f.close()
