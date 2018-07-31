@@ -17,14 +17,14 @@ BHID= files[:,1]
 Time= files[:,2]
 BHDistance= files[:,5]
 
-ID=[89422247, 89422741, 89425759]
+#ID=[89422247, 89422741, 89425759]
 
-i1= np.where(BHID==89422247)
-i2= np.where(BHID== 89422741)
-i3= np.where(BHID== 89425759)
-i4= np.where(BHID== 243770516)
-i5= np.where(BHID== 243778457)
-i6= np.where(BHID== 243771992)
+#i1= np.where(BHID==89422247)
+#i2= np.where(BHID== 89422741)
+#i3= np.where(BHID== 89425759)
+#i4= np.where(BHID== 243770516)
+#i5= np.where(BHID== 243778457)
+#i6= np.where(BHID== 243771992)
 i7= np.where(BHID== 307622464)
 i8= np.where(BHID== 227839049)
 
@@ -38,12 +38,12 @@ i8= np.where(BHID== 227839049)
 #print Time
 #print BHDistance
 
-plt.plot(Time[i1], BHDistance[i1],  label= "Captain Marvel")
-plt.plot(Time[i2], BHDistance[i2], label= "Captain Marvel")
-plt.plot(Time[i3], BHDistance[i3], label= "Captain Marvel")
-plt.plot(Time[i4], BHDistance[i4], label= "Storm")
-plt.plot(Time[i5], BHDistance[i5], label= "Strom")
-plt.plot(Time[i6], BHDistance[i6], label= "Storm")
+#plt.plot(Time[i1], BHDistance[i1],  label= "Captain Marvel")
+#plt.plot(Time[i2], BHDistance[i2], label= "Captain Marvel")
+#plt.plot(Time[i3], BHDistance[i3], label= "Captain Marvel")
+#plt.plot(Time[i4], BHDistance[i4], label= "Storm")
+#plt.plot(Time[i5], BHDistance[i5], label= "Strom")
+#plt.plot(Time[i6], BHDistance[i6], label= "Storm")
 plt.plot(Time[i7], BHDistance[i7], label= "Rogue")
 plt.plot(Time[i8], BHDistance[i8], label= "Elektra")
 
