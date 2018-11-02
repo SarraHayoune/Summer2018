@@ -12,7 +12,7 @@ import matplotlib
 import readcol
 
 
-files = readcol.readcol('testdata.dat',fsep=',')
+files = readcol.readcol('testdata.txt',fsep=',')
 BHmass= files[:,2]
 Time= files[:,0]
 BHDistance= files[:,3]
