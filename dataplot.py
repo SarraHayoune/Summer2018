@@ -45,15 +45,14 @@ BHDistance= files[:,3]
 #plt.plot(Time[i5], BHDistance[i5], label= "Strom")
 #plt.plot(Time[i6], BHDistance[i6], label= "Storm")
 plt.plot(Time, BHDistance)
-#plt.plot(Time, BHDistance)
-
-
+plt.xlabel("Time 'Gyr'")
 plt.ylabel("BH Distance 'Kpc'")
+plt.tick_params(axis="y", labelcolor="b")
 
 plt.twinx()
-plt.xlabel("Time 'Gyr'")
-plt.plot(Time, BHmass)
 plt.ylabel("BH Mass 'Kpc'")
+plt.tick_params(axis="y", labelcolor="r")
+
 plt.legend()
 plt.show()
 
