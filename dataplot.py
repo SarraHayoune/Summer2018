@@ -49,9 +49,9 @@ plt.plot(Time, BHDistance, BHmass)
 
 
 plt.ylabel("BH Distance 'Kpc'")
+plt.twinx()
 plt.xlabel("Time 'Gyr'")
 
-plt.twinx()
 plt.ylabel("BH Mass 'Kpc'")
 plt.legend()
 plt.show()
