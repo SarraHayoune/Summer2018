@@ -11,10 +11,22 @@ import readcol
 
 files = readcol.readcol('testdata.txt')
 Time= files[:,0]
+BHmas = files [:2]
 BHDistance= files[:,3]
 
+#plt.plot(Time, BHDistance)
+#plt.ylabel('BH Distance')
+#plt.xlabel('Time')
+
+plt.plot(Time, BHmass)
+plt.ylabel("BH Mass 'Kpc'")
+plt.xlabel("Time 'Gyr'")
+plt.tick_params(axis="y", labelcolor="b")
+
 plt.plot(Time, BHDistance)
-plt.ylabel('BH Distance')
-plt.xlabel('Time')
+plt.twinx()
+plt.ylabel("BH Distance 'Kpc'")
+plt.tick_params(axis="y", labelcolor="r")
+
 plt.show()
 
