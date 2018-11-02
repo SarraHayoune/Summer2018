@@ -13,8 +13,9 @@ import readcol
 
 
 files = readcol.readcol('testdata.txt',fsep=',')
-BHmass= files[:,2]
+
 Time= files[:,0]
+BHmass= files[:,2]
 BHDistance= files[:,3]
 
 #ID=[89422247, 89422741, 89425759]
