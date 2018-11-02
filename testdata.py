@@ -18,12 +18,12 @@ BHDistance= files[:,3]
 #plt.ylabel('BH Distance')
 #plt.xlabel('Time')
 
-plt.plot(Time, BHmass)
+plt.plot(Time, BHmass,"b-", linewidth=2)
 plt.ylabel("BH Mass 'Kpc'")
 plt.xlabel("Time 'Gyr'")
 plt.tick_params(axis="y", labelcolor="b")
 
-plt.plot(Time, BHDistance)
+plt.plot(Time, BHDistance, "r-", linewidth=2)
 plt.twinx()
 plt.ylabel("BH Distance 'Kpc'")
 plt.tick_params(axis="y", labelcolor="r")
