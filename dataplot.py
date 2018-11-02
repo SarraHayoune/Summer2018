@@ -49,9 +49,9 @@ plt.ylabel("BH Mass 'Kpc'")
 plt.xlabel("Time 'Gyr'")
 plt.tick_params(axis="y", labelcolor="b")
 
-plt.twinx()
-plt.ylabel("BH Distance 'Kpc'")
-plt.tick_params(axis="y", labelcolor="r")
+#plt.twinx()
+#plt.ylabel("BH Distance 'Kpc'")
+#plt.tick_params(axis="y", labelcolor="r")
 
 plt.legend()
 plt.show()
