@@ -74,8 +74,12 @@ for file in files:
         #the .5 is the square root , this is the distance formula
         distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
         print "the distance is:", distance
+
+        starmass = h[currenthalo].s['mass'].sum()
+        gasmass = h[currenthalo].g['mass'].sum()
+        virialmass = starmass+gasmass+h[currenthalo].d['mass'].sum()
     
-        data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i]] 
+        data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i], starmass, gasmass, virialmass] 
         
         
         data= str(data)
