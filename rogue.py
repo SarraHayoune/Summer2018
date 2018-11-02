@@ -56,6 +56,10 @@ for file in files:
     
         #put the galaxy you care about in the center of the simulation
         pynbody.analysis.angmom.faceon(h[currenthalo])
+        
+        starmass = h[currenthalo].s['mass'].sum()
+        gasmass = h[currenthalo].g['mass'].sum()
+        virialmass = starmass+gasmass+h[currenthalo].d['mass'].sum()
 
         #this is the position of black hole
         BHposition=BH['pos']
@@ -76,7 +80,7 @@ for file in files:
         distance =((BHx**2)+(BHy**2)+(BHz**2))**(.5)
         print "the distance is:", distance
     
-        data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i]] 
+        data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i],virialmass,starmass,gasmass] 
         
         
         data= str(data)
