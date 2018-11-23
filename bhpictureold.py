@@ -63,7 +63,7 @@ for i in halolist:
          #putting the z-values into a column
     BHz= BHposition[[i],2]
     print "z position", BHz
-    # create an image using  the default bands (i, v, u)
+    
     #plt.plot(BHx, BHy,'+') 
     #pynbody.plot.stars.render(s,width= '5 kpc',plot=True,ret_im=True,filename='halo'+str(currenthalo)+'.png')
     #plt.plot(BHx, BHy,'+')
