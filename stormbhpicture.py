@@ -15,7 +15,7 @@ s.physical_units()
 h = s.halos()
 
  # function to find black hole
-def findBH(S):
+def findBH(s):
     BHfilter = pynbody.filt.LowPass('tform',0.0)
     BH = s.stars[BHfilter]
     return BH
