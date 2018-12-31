@@ -2,10 +2,14 @@
 import pynbody
 import matplotlib.pylab as plt
 import numpy as np
+import BH_FUNCTIONS.py as BHF
+
 
 # load the snapshot and set to physical units
 
-s= pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
+#s= pynbody.load('/mnt/cptmarvel/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096/cptmarvel.cosmo25cmb.4096g5HbwK1BH.004096')
+s= pynbody.load('/jillian/storm/storm.cosmo25cmb.4096g5HbwK1BH.004096/storm.cosmo25cmb.4096g5HbwK1BH.004096')
+
 
 # convert the units
 s.physical_units()
@@ -66,7 +70,7 @@ for i in halolist:
     print "z position", BHz
     # create an image using  the default bands (i, v, u)
     #plt.plot(BHx, BHy,'+') 
-    #pynbody.plot.stars.render(s,width= '5 kpc',plot=True,ret_im=True,filename='halo'+str(currenthalo)+'.png')
-    #plt.plot(BHx, BHy,'+')
+    BHF.render(s,width= '5 kpc',plot=True,ret_im=True,filename='halo'+str(currenthalo)+'.png')
+    plt.plot(BHx, BHy,'+')
                         
-    plot_BH_pos(h[currenthalo].s, BH,'tform', w=20, save=True)
+    #plot_BH_pos(h[currenthalo].s, BH,'tform', w=20, save=True)
