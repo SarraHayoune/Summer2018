@@ -1,6 +1,6 @@
 
 
-
+# this code is to made a graph of Distance from Halo Center vs Time for some of the wandering BHs and their halo mass on the opposite axis
 import pynbody
 import numpy as np
 import pandas as pd
