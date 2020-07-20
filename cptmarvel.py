@@ -81,7 +81,7 @@ for file in files:
         gasmass = h[currenthalo].g['mass'].sum()
         virialmass = starmass+gasmass+h[currenthalo].d['mass'].sum()
     
-        data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i], starmass, gasmass, virialmass] 
+        data = [currenthalo, BH['iord'][i], gettime(s),getz(s), BH['mass'][i], BH['r'][i], float(starmass), float(gasmass), float(virialmass)] 
         
         
         data= str(data)
